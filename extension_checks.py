@@ -854,7 +854,15 @@ def part_g(c=0.1, seed=20261101):
             upper = sp["up_dds"] / sp["QG"]
             target = d / (2 * (d + 2))
             check(r >= target - c * eps, f"near-isotropic lower ratio d={d} eps={eps}: {r} vs {target}")
-            check(upper <= 0.5 + 1e-12, f"near-isotropic upper ratio d={d} eps={eps}: {upper}")
+            # The factor-two inequality 16(|a||b| - a.b) <= Q_G is nearly tight here, and both sides suffer
+            # cancellation in floating point (platform-dependent last places), so test it on the exact
+            # floating-point inputs at 60 significant digits; the recorded ratio stays the float value.
+            with mpmath.workdps(60):
+                am, bm = [mpmath.mpf(float(x)) for x in a], [mpmath.mpf(float(x)) for x in b]
+                nab = mpmath.sqrt(mpmath.fsum(x * x for x in am) * mpmath.fsum(y * y for y in bm))
+                dot = mpmath.fsum(x * y for x, y in zip(am, bm))
+                qg = 4 * (mpmath.fsum(am) - mpmath.fsum(bm)) ** 2 + 8 * mpmath.fsum((x - y) ** 2 for x, y in zip(am, bm))
+                check(16 * (nab - dot) <= qg, f"near-isotropic upper ratio d={d} eps={eps}: {upper}")
             check(r <= upper * (1 + 1e-12), f"lower ratio <= upper ratio d={d} eps={eps}")
             rows.append({"d": d, "eps": eps, "ratio_32S2_over_KC_over_QG": r, "d_over_2(d+2)": target,
                          "deviation": r - target, "deviation_over_eps": (r - target) / eps,
