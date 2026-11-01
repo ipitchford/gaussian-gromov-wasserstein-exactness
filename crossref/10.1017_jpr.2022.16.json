@@ -1,0 +1,220 @@
+{
+ "message": {
+  "DOI": "10.1017/jpr.2022.16",
+  "ISSN": [
+   "0021-9002",
+   "1475-6072"
+  ],
+  "URL": "https://doi.org/10.1017/jpr.2022.16",
+  "alternative-id": [
+   "S002190022200016X"
+  ],
+  "assertion": [
+   {
+    "group": {
+     "label": "Copyright and Licensing",
+     "name": "copyright_and_licensing"
+    },
+    "label": "Copyright",
+    "name": "copyright",
+    "value": "© The Author(s), 2022. Published by Cambridge University Press on behalf of Applied Probability Trust"
+   }
+  ],
+  "author": [
+   {
+    "affiliation": [],
+    "family": "Delon",
+    "given": "Julie",
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ],
+    "sequence": "first"
+   },
+   {
+    "affiliation": [],
+    "family": "Desolneux",
+    "given": "Agnes",
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ],
+    "sequence": "additional"
+   },
+   {
+    "affiliation": [],
+    "family": "Salmona",
+    "given": "Antoine",
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ],
+    "sequence": "additional"
+   }
+  ],
+  "container-title": [
+   "Journal of Applied Probability"
+  ],
+  "content-domain": {
+   "crossmark-restriction": true,
+   "domain": [
+    "cambridge.org"
+   ]
+  },
+  "created": {
+   "date-parts": [
+    [
+     2022,
+     8,
+     18
+    ]
+   ],
+   "date-time": "2022-08-18T07:38:17Z",
+   "timestamp": 1660808297000
+  },
+  "deposited": {
+   "date-parts": [
+    [
+     2022,
+     11,
+     11
+    ]
+   ],
+   "date-time": "2022-11-11T10:21:58Z",
+   "timestamp": 1668162118000
+  },
+  "indexed": {
+   "date-parts": [
+    [
+     2026,
+     9,
+     29
+    ]
+   ],
+   "date-time": "2026-09-29T15:46:52Z",
+   "timestamp": 1790696812334,
+   "version": "4.1.0"
+  },
+  "is-referenced-by-count": 19,
+  "issn-type": [
+   {
+    "type": "print",
+    "value": "0021-9002"
+   },
+   {
+    "type": "electronic",
+    "value": "1475-6072"
+   }
+  ],
+  "issue": "4",
+  "issued": {
+   "date-parts": [
+    [
+     2022,
+     8,
+     18
+    ]
+   ]
+  },
+  "journal-issue": {
+   "issue": "4",
+   "published-print": {
+    "date-parts": [
+     [
+      2022,
+      12
+     ]
+    ]
+   }
+  },
+  "language": "en",
+  "license": [
+   {
+    "URL": "https://www.cambridge.org/core/terms",
+    "content-version": "unspecified",
+    "delay-in-days": 0,
+    "start": {
+     "date-parts": [
+      [
+       2022,
+       8,
+       18
+      ]
+     ],
+     "date-time": "2022-08-18T00:00:00Z",
+     "timestamp": 1660780800000
+    }
+   }
+  ],
+  "link": [
+   {
+    "URL": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S002190022200016X",
+    "content-type": "unspecified",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "member": "56",
+  "original-title": [],
+  "page": "1178-1198",
+  "prefix": "10.1017",
+  "published": {
+   "date-parts": [
+    [
+     2022,
+     8,
+     18
+    ]
+   ]
+  },
+  "published-online": {
+   "date-parts": [
+    [
+     2022,
+     8,
+     18
+    ]
+   ]
+  },
+  "published-print": {
+   "date-parts": [
+    [
+     2022,
+     12
+    ]
+   ]
+  },
+  "publisher": "Cambridge University Press (CUP)",
+  "reference-count": 27,
+  "references-count": 27,
+  "relation": {},
+  "resource": {
+   "primary": {
+    "URL": "https://www.cambridge.org/core/product/identifier/S002190022200016X/type/journal_article"
+   }
+  },
+  "score": 1,
+  "short-container-title": [
+   "J. Appl. Probab."
+  ],
+  "short-title": [],
+  "source": "Crossref",
+  "subject": [],
+  "subtitle": [],
+  "title": [
+   "Gromov–Wasserstein distances between Gaussian distributions"
+  ],
+  "type": "journal-article",
+  "update-policy": "https://doi.org/10.1017/policypage",
+  "volume": "59"
+ },
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "status": "ok"
+}

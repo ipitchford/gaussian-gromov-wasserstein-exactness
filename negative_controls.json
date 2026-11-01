@@ -1,0 +1,137 @@
+{
+  "python": "3.11.14",
+  "interpreter": "/Users/admin/.cache/uv/builds-v0/.tmpdlUA2w/bin/python3",
+  "working_directory": "/var/folders/zw/csz72k695vl0vzqj_fpgn8kr0000gn/T/gw-negative-controls-0o153l4p",
+  "negative_controls": [
+    {
+      "script": "verify_gw.py",
+      "mutation": "441-case grid: generator norm 24 -> 25",
+      "flags": "-I",
+      "exit_code": 1,
+      "detected": true,
+      "message": "CHECK FAILED: grid generator norm (1, 0, 0, 0)",
+      "seconds": 0.03
+    },
+    {
+      "script": "verify_gw.py",
+      "mutation": "441-case grid: generator norm 24 -> 25",
+      "flags": "-I -O",
+      "exit_code": 1,
+      "detected": true,
+      "message": "CHECK FAILED: grid generator norm (1, 0, 0, 0)",
+      "seconds": 0.03
+    },
+    {
+      "script": "independent_symbolic_audit.py",
+      "mutation": "generator norm identity 24 -> 25",
+      "flags": "-I",
+      "exit_code": 1,
+      "detected": true,
+      "message": "CHECK FAILED: Generator norm",
+      "seconds": 0.02
+    },
+    {
+      "script": "independent_symbolic_audit.py",
+      "mutation": "generator norm identity 24 -> 25",
+      "flags": "-I -O",
+      "exit_code": 1,
+      "detected": true,
+      "message": "CHECK FAILED: Generator norm",
+      "seconds": 0.02
+    },
+    {
+      "script": "verify_combined_flow.py",
+      "mutation": "curvature bound K_C <= 32 A2 B2 S -> 3 A2 B2 S",
+      "flags": "-I",
+      "exit_code": 1,
+      "detected": true,
+      "message": "CHECK FAILED: K_C <= 32 A2 B2 S d=2 sample=0",
+      "seconds": 0.06
+    },
+    {
+      "script": "verify_combined_flow.py",
+      "mutation": "curvature bound K_C <= 32 A2 B2 S -> 3 A2 B2 S",
+      "flags": "-I -O",
+      "exit_code": 1,
+      "detected": true,
+      "message": "CHECK FAILED: K_C <= 32 A2 B2 S d=2 sample=0",
+      "seconds": 0.06
+    },
+    {
+      "script": "proof_digest_checks.py",
+      "mutation": "finite-square optimum 8 -> 9",
+      "flags": "-I",
+      "exit_code": 1,
+      "detected": true,
+      "message": "CHECK FAILED: finite-square deterministic optimum equals 8",
+      "seconds": 0.26
+    },
+    {
+      "script": "proof_digest_checks.py",
+      "mutation": "finite-square optimum 8 -> 9",
+      "flags": "-I -O",
+      "exit_code": 1,
+      "detected": true,
+      "message": "CHECK FAILED: finite-square deterministic optimum equals 8",
+      "seconds": 0.26
+    },
+    {
+      "script": "extension_checks.py",
+      "mutation": "Q_G identity coefficient 8 -> 9",
+      "flags": "-I",
+      "exit_code": 1,
+      "detected": true,
+      "message": "CHECK FAILED: Q_G identity (1, 0, 0),(1, 1, 0)",
+      "seconds": 0.48
+    },
+    {
+      "script": "extension_checks.py",
+      "mutation": "Q_G identity coefficient 8 -> 9",
+      "flags": "-I -O",
+      "exit_code": 1,
+      "detected": true,
+      "message": "CHECK FAILED: Q_G identity (1, 0, 0),(1, 1, 0)",
+      "seconds": 0.48
+    },
+    {
+      "script": "gw_gaussian_bracket.py",
+      "mutation": "sharp certificate 32 -> 33 (demo self-check)",
+      "flags": "-I",
+      "exit_code": 1,
+      "detected": true,
+      "message": "CHECK FAILED: plane-to-line demo does not reproduce manuscript values",
+      "seconds": 0.02
+    },
+    {
+      "script": "gw_gaussian_bracket.py",
+      "mutation": "sharp certificate 32 -> 33 (demo self-check)",
+      "flags": "-I -O",
+      "exit_code": 1,
+      "detected": true,
+      "message": "CHECK FAILED: plane-to-line demo does not reproduce manuscript values",
+      "seconds": 0.02
+    }
+  ],
+  "positive_controls": [
+    {
+      "script": "independent_symbolic_audit.py",
+      "flags": "-I -O",
+      "exit_code": 0,
+      "seconds": 0.05
+    },
+    {
+      "script": "verify_gw.py",
+      "flags": "-I -O",
+      "exit_code": 0,
+      "seconds": 0.04
+    },
+    {
+      "script": "gw_gaussian_bracket.py",
+      "flags": "-I -O",
+      "exit_code": 0,
+      "seconds": 0.02
+    }
+  ],
+  "summary": "12/12 planted false identities detected (each under python -I and python -I -O)",
+  "status": "PASS"
+}

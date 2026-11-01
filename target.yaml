@@ -1,0 +1,90 @@
+target_id: gaussian-gw-exactness-classification
+search_date: 2026-10-31
+intended_contribution_unit: theorem
+claim:
+  exact_statement: |
+    Let mu and nu be finite-dimensional Gaussian probability measures with
+    positive covariance ranks r,s. For the unregularised objective
+    Q(pi)=E[(||X-X'||^2-||Y-Y'||^2)^2], with independent copies from pi,
+    an unrestricted optimum can be jointly Gaussian if and only if r=s
+    and their positive covariance eigenvalues, sorted decreasingly, are
+    proportional. All means and ambient dimensions are allowed. Zero-rank
+    marginals are separate trivial exceptions. A canonical Gaussian optimum
+    is strictly improved by an explicitly constructed Gaussian-preserving
+    flow whenever the zero-padded eigenvalue lists are not proportional.
+  exclusions:
+    - No claim to compute the unrestricted optimum in the nonproportional case.
+    - The already known sufficiently-large-dimensional counterexample is not claimed as new.
+    - This is squared Euclidean dissimilarity with squared outer loss, without a prefactor.
+    - The inner-product, ordinary-distance and entropically regularised objectives are different problems.
+source:
+  originating_reference: "Delon, Desolneux and Salmona (2022), Gromov-Wasserstein distances between Gaussian distributions; Peyre (23 October 2026), Gaussians are not closed for Gromov-Wasserstein."
+  url: "https://doi.org/10.1017/jpr.2022.16"
+normalisation:
+  indices: "Covariance eigenvalues a_i,b_i sorted decreasingly and padded with zeros to d=max(r,s)."
+  scaling: "Q is the double integral itself; not its square or fourth root and no 1/2 prefactor."
+  basis_order: "Independent orthogonal eigenbases of the two covariance matrices."
+  symmetries: [translations, independent orthogonal transformations, simultaneous index relabelling]
+sequences:
+  - name: isotropic-one-versus-n-Gaussian-objective
+    exact_values: ["0", "12", "32", "60", "96", "140", "192", "252"]
+    natural_scalings: ["4(n^2-1), n=1,2,..."]
+generating_functions:
+  - name: known-isotropic-Gaussian-benchmark
+    convention: "sum_{n>=1} 4(n^2-1) z^n"
+    factored: "4*z^2*(3-z)/(1-z)^3"
+    expanded_numerator: "12*z^2-4*z^3"
+    expanded_denominator: "1-3*z+3*z^2-z^3"
+    novelty_status: "Known elementary sequence; scaled and shifted OEIS A005563, not a proposed contribution."
+matrices:
+  - name: rank-mismatch-smallest-example
+    entries: [["1", "0"], ["1", "1"]]
+  - name: anisotropic-equal-rank-example
+    entries: [["2", "1"], ["1", "1"]]
+  - name: proportional-control
+    entries: [["2", "1"], ["4", "2"]]
+aliases:
+  analysis: [Gaussian-measure-preserving flow, weighted divergence-free field, nonlinear optimal coupling]
+  probability: [Gaussian coupling, mixed fourth moment, Wick formula]
+  combinatorics: [pairwise spectral minors]
+  mathematical_physics: [incompressible weighted flow, polynomial Hamiltonian field, Lotka-Volterra centre, skew-symmetric Lotka-Volterra system]
+  statistics_optimisation_ml: [Gromov-Wasserstein, quadratic GW, Gaussian GW, linear Gromov-Monge, covariance alignment]
+known_invariants:
+  Gaussian_optimum: "4[(sum a-sum b)^2+2 sum_i(a_i-b_i)^2]"
+  pair_flow: "V_i=z_i(z_j^2-1), V_j=z_j(1-z_i^2)"
+  Gaussian_divergence: "div V-z dot V=0"
+  score_derivative: "G'(0)=4(b_i a_j-b_j a_i)"
+  objective_derivative: "Q'(0)=-16(b_i a_j-b_j a_i)"
+  proportionality_defect: "sum_{i<j}(a_i b_j-a_j b_i)^2=||a||^2||b||^2-(a dot b)^2"
+  pair_curvature: "K_ij=sqrt[(24(ai^2+aj^2)-32ai*aj)(24(bi^2+bj^2)-32bi*bj)]+8(ai*bi+aj*bj)"
+  pair_gap_certificate: "QG-Q* >= 32*(bi*aj-bj*ai)^2/K_ij"
+  simultaneous_field: "C=ba^T-ab^T; W_i=zi*sum_j Cij*(zj^2-1)"
+  dimension_free_new_lower_gap: "S/(||a||||b||) <= QG-Q*, where S=||a||^2||b||^2-(a dot b)^2"
+  dimension_free_known_upper_gap: "QG-Q* <= 8*(||a||||b||-a dot b); DDS Eq. (5.3)-(5.4), not new"
+  solenoidal_sensitivity: "max[-Q'(0)] over unit latent Gaussian-divergence-free L2 velocities = 8*sqrt(S)"
+  affine_curl: "g(x)=2||x||^2 Mx+4MAx; partial_j g_i-partial_i g_j=4[x_j(Mx)_i-x_i(Mx)_j]+4(MA-AM)_ij"
+supplementary_claims:
+  affine_rigidity: |
+    For a probability measure with finite fourth moment whose support has
+    nonempty relative interior in its affine hull E, an affine graph coupling
+    is globally optimal for Q iff its restriction to E is a similarity or
+    constant. With a positive C1 density on an open set and no singular
+    component there, a nonsimilarity also admits local descent via compactly
+    supported C1 measure-preserving flows.
+  no_novelty_claims:
+    - Gaussian benchmark and proportional-spectrum sufficiency.
+    - Known spectral upper bound for the Gaussian approximation gap.
+    - The Lotka-Volterra field or the general Gaussian-preserving-flow method.
+    - Lagrange's identity or the general weighted Helmholtz decomposition.
+  manuscript_scope: "No exact unrestricted nonproportional optimiser or value is claimed."
+search_constraints:
+  primary_sources_only_for_technical_claims: true
+  databases_or_corpora: [live web search, arXiv, publisher full text, author webpages, proceedings]
+
+# Added in revision, 1 November 2026
+revision_claims:
+  factor_two: "Q_G/2 <= Q_* <= Q_G for all positive-rank Gaussian pairs; upper half of excess bound from Delon et al."
+  factor_two_sharpness: "a=1+eps*u, b=1+eps*v, u!=v nonincreasing zero-sum: D/Q_G >= d/(2(d+2)) - O(eps); sup D/Q_G = 1/2"
+  comonotone_refinement: "D <= 4*(M_co - alpha*beta - 2*a.b), M_co = int_0^1 F^{-1}_{|X|^2} F^{-1}_{|Y|^2}"
+  plug_in_inconsistency: "empirical GW value -> Q_*, plug-in Gaussian formula -> Q_G; limit gap >= S/(|a||b|)"
+  stability: "sqrt(Q_*) satisfies the triangle inequality; Q_*(mu,mu') <= 32*sqrt(2)*W4^2*(m4+m4')^(1/2)"

@@ -1,0 +1,4 @@
+{
+  "status": "PASS",
+  "summary": "12/12 planted false identities detected (each under python -I and python -I -O)"
+}

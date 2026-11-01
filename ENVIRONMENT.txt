@@ -1,0 +1,7 @@
+Replay environment used for the release replay (1 November 2026)
+
+- macOS (Apple silicon), CPython 3.12 managed by uv
+- numpy 2.3.5, scipy 1.17.0, matplotlib 3.10.8, mpmath 1.4.1 (requirements.txt); MPLBACKEND=Agg
+- Command: python -I -B tools/replay_compare.py <package root>   (every checker with -I -O -B in a temporary copy)
+- PDF build: pandoc + XeLaTeX + xdvipdfmx (TinyTeX), bash build_pdf.sh
+- CI: GitHub Actions ubuntu-latest, Python 3.12, same pinned packages (.github/workflows/replay.yml): quick checks blocking, full suite non-blocking

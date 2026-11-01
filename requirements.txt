@@ -1,0 +1,7 @@
+# Versions used for the numerical illustrations and figure.
+# The exact-only polynomial checkers, gw_gaussian_bracket.py and negative_controls.py
+# need only Python's standard library (negative_controls runs the numerical copies too).
+numpy==2.3.5
+scipy==1.17.0
+matplotlib==3.10.8
+mpmath==1.4.1

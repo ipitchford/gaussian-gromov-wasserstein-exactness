@@ -1,0 +1,82 @@
+{
+  "python": "3.11.14",
+  "numpy": "2.3.5",
+  "finite_square_deterministic_couplings": [
+    {
+      "signs": [
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "covariance_squared": "1",
+      "Q": "8"
+    },
+    {
+      "signs": [
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "covariance_squared": "1",
+      "Q": "8"
+    },
+    {
+      "signs": [
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "covariance_squared": "0",
+      "Q": "16"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "covariance_squared": "0",
+      "Q": "16"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "covariance_squared": "1",
+      "Q": "8"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "covariance_squared": "1",
+      "Q": "8"
+    }
+  ],
+  "finite_square_conditional_mean_grid_cases": 85,
+  "finite_square_exact_optimum": "8",
+  "reduced_flow_cases": 60,
+  "dimensions": [
+    2,
+    3,
+    7
+  ],
+  "seed": 44031,
+  "rtol": 2e-12,
+  "atol": 2e-13,
+  "max_flow_reconstruction_abs_error": 7.891465259035613e-12,
+  "max_flow_reconstruction_scaled_error": 4.209192139132347e-12,
+  "elapsed_seconds": 0.08076629100833088,
+  "optimisation_flag": "none",
+  "status": "All checks passed. The finite-square optimality and flow reduction have independent analytic proofs."
+}

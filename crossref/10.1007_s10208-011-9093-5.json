@@ -1,0 +1,194 @@
+{
+ "message": {
+  "DOI": "10.1007/s10208-011-9093-5",
+  "ISSN": [
+   "1615-3375",
+   "1615-3383"
+  ],
+  "URL": "https://doi.org/10.1007/s10208-011-9093-5",
+  "alternative-id": [
+   "9093"
+  ],
+  "author": [
+   {
+    "affiliation": [],
+    "family": "Mémoli",
+    "given": "Facundo",
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ],
+    "sequence": "first"
+   }
+  ],
+  "container-title": [
+   "Foundations of Computational Mathematics"
+  ],
+  "content-domain": {
+   "crossmark-restriction": false,
+   "domain": []
+  },
+  "created": {
+   "date-parts": [
+    [
+     2011,
+     4,
+     28
+    ]
+   ],
+   "date-time": "2011-04-28T20:07:01Z",
+   "timestamp": 1304021221000
+  },
+  "deposited": {
+   "date-parts": [
+    [
+     2025,
+     3,
+     5
+    ]
+   ],
+   "date-time": "2025-03-05T04:06:40Z",
+   "timestamp": 1741147600000
+  },
+  "indexed": {
+   "date-parts": [
+    [
+     2026,
+     10,
+     24
+    ]
+   ],
+   "date-time": "2026-10-24T15:36:32Z",
+   "timestamp": 1792856192433,
+   "version": "4.5.0"
+  },
+  "is-referenced-by-count": 442,
+  "issn-type": [
+   {
+    "type": "print",
+    "value": "1615-3375"
+   },
+   {
+    "type": "electronic",
+    "value": "1615-3383"
+   }
+  ],
+  "issue": "4",
+  "issued": {
+   "date-parts": [
+    [
+     2011,
+     4,
+     30
+    ]
+   ]
+  },
+  "journal-issue": {
+   "issue": "4",
+   "published-print": {
+    "date-parts": [
+     [
+      2011,
+      8
+     ]
+    ]
+   }
+  },
+  "language": "en",
+  "license": [
+   {
+    "URL": "http://www.springer.com/tdm",
+    "content-version": "tdm",
+    "delay-in-days": 0,
+    "start": {
+     "date-parts": [
+      [
+       2011,
+       4,
+       30
+      ]
+     ],
+     "date-time": "2011-04-30T00:00:00Z",
+     "timestamp": 1304121600000
+    }
+   }
+  ],
+  "link": [
+   {
+    "URL": "http://link.springer.com/content/pdf/10.1007/s10208-011-9093-5.pdf",
+    "content-type": "application/pdf",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   },
+   {
+    "URL": "http://link.springer.com/article/10.1007/s10208-011-9093-5/fulltext.html",
+    "content-type": "text/html",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   },
+   {
+    "URL": "http://link.springer.com/content/pdf/10.1007/s10208-011-9093-5",
+    "content-type": "unspecified",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "member": "297",
+  "original-title": [],
+  "page": "417-487",
+  "prefix": "10.1007",
+  "published": {
+   "date-parts": [
+    [
+     2011,
+     4,
+     30
+    ]
+   ]
+  },
+  "published-online": {
+   "date-parts": [
+    [
+     2011,
+     4,
+     30
+    ]
+   ]
+  },
+  "published-print": {
+   "date-parts": [
+    [
+     2011,
+     8
+    ]
+   ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference-count": 118,
+  "references-count": 118,
+  "relation": {},
+  "resource": {
+   "primary": {
+    "URL": "http://link.springer.com/10.1007/s10208-011-9093-5"
+   }
+  },
+  "score": 1,
+  "short-container-title": [
+   "Found Comput Math"
+  ],
+  "short-title": [],
+  "source": "Crossref",
+  "subject": [],
+  "subtitle": [],
+  "title": [
+   "Gromov–Wasserstein Distances and the Metric Approach to Object Matching"
+  ],
+  "type": "journal-article",
+  "volume": "11"
+ },
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "status": "ok"
+}

@@ -1,0 +1,90 @@
+[
+ {
+  "source": "arXiv API (export.arxiv.org), retrieved 1 November 2026; abstract omitted",
+  "id": "http://arxiv.org/abs/2210.11945v3",
+  "title": "On the existence of Monge maps for the Gromov-Wasserstein problem",
+  "authors": [
+   "Théo Dumont",
+   "Théo Lacombe",
+   "François-Xavier Vialard"
+  ],
+  "published": "2022-10-19T08:57:49Z",
+  "updated": "2024-07-29T11:02:28Z"
+ },
+ {
+  "source": "arXiv API (export.arxiv.org), retrieved 1 November 2026; abstract omitted",
+  "id": "http://arxiv.org/abs/2608.24184v1",
+  "title": "Quadratic Optimization over Probability Measures with Coupling Constraints",
+  "authors": [
+   "Hoang Anh Tran",
+   "Yong Sheng Soh"
+  ],
+  "published": "2026-08-25T07:49:08Z",
+  "updated": "2026-08-25T07:49:08Z"
+ },
+ {
+  "source": "arXiv API (export.arxiv.org), retrieved 1 November 2026; abstract omitted",
+  "id": "http://arxiv.org/abs/2209.10873v4",
+  "title": "Turning Normalizing Flows into Monge Maps with Geodesic Gaussian Preserving Flows",
+  "authors": [
+   "Guillaume Morel",
+   "Lucas Drumetz",
+   "Simon Benaïchouche",
+   "Nicolas Courty",
+   "François Rousseau"
+  ],
+  "published": "2022-09-22T09:16:42Z",
+  "updated": "2023-04-14T05:31:18Z"
+ },
+ {
+  "source": "arXiv API (export.arxiv.org), retrieved 1 November 2026; abstract omitted",
+  "id": "http://arxiv.org/abs/2402.02239v3",
+  "title": "Distributional Reduction: Unifying Dimensionality Reduction and Clustering with Gromov-Wasserstein",
+  "authors": [
+   "Hugues Van Assel",
+   "Cédric Vincent-Cuaz",
+   "Nicolas Courty",
+   "Rémi Flamary",
+   "Pascal Frossard",
+   "Titouan Vayer"
+  ],
+  "published": "2024-02-03T19:00:19Z",
+  "updated": "2025-06-27T07:44:55Z"
+ },
+ {
+  "source": "arXiv API (export.arxiv.org), retrieved 1 November 2026; abstract omitted",
+  "id": "http://arxiv.org/abs/2104.07970v1",
+  "title": "Gromov-Wasserstein Distances between Gaussian Distributions",
+  "authors": [
+   "Antoine Salmona",
+   "Julie Delon",
+   "Agnès Desolneux"
+  ],
+  "published": "2021-04-16T08:42:04Z",
+  "updated": "2021-04-16T08:42:04Z"
+ },
+ {
+  "source": "arXiv API (export.arxiv.org), retrieved 1 November 2026; abstract omitted",
+  "id": "http://arxiv.org/abs/2011.04447v1",
+  "title": "A contribution to Optimal Transport on incomparable spaces",
+  "authors": [
+   "Titouan Vayer"
+  ],
+  "published": "2020-11-09T14:13:52Z",
+  "updated": "2020-11-09T14:13:52Z"
+ },
+ {
+  "source": "arXiv API (export.arxiv.org), retrieved 1 November 2026; abstract omitted",
+  "id": "http://arxiv.org/abs/2512.03579v2",
+  "title": "Optimal Transportation and Alignment Between Gaussian Measures",
+  "authors": [
+   "Sanjit Dandapanthula",
+   "Aleksandr Podkopaev",
+   "Shiva Prasad Kasiviswanathan",
+   "Aaditya Ramdas",
+   "Ziv Goldfeld"
+  ],
+  "published": "2025-12-03T09:01:48Z",
+  "updated": "2026-10-06T04:57:55Z"
+ }
+]

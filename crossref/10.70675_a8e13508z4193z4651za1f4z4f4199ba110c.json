@@ -1,0 +1,140 @@
+{
+ "message": {
+  "DOI": "10.70675/a8e13508z4193z4651za1f4z4f4199ba110c",
+  "URL": "https://doi.org/10.70675/a8e13508z4193z4651za1f4z4f4199ba110c",
+  "alternative-id": [
+   "2023UPASM033"
+  ],
+  "approved": {
+   "date-parts": [
+    [
+     2023,
+     12,
+     6
+    ]
+   ]
+  },
+  "author": [
+   {
+    "affiliation": [
+     {
+      "id": [
+       {
+        "asserted-by": "publisher",
+        "id": "https://ror.org/03xjwb503",
+        "id-type": "ROR"
+       }
+      ],
+      "name": "université Paris-Saclay"
+     }
+    ],
+    "family": "Salmona",
+    "given": "Antoine",
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ],
+    "sequence": "first"
+   }
+  ],
+  "container-title": [],
+  "content-domain": {
+   "crossmark-restriction": false,
+   "domain": []
+  },
+  "contributor": [
+   {
+    "affiliation": [],
+    "role": [
+     null
+    ],
+    "sequence": "additional"
+   }
+  ],
+  "created": {
+   "date-parts": [
+    [
+     2026,
+     4,
+     8
+    ]
+   ],
+   "date-time": "2026-04-08T10:31:54Z",
+   "timestamp": 1775644314000
+  },
+  "degree": [
+   "Doctorat ès Mathématiques appliquées",
+   "PhD"
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2026,
+     9,
+     28
+    ]
+   ],
+   "date-time": "2026-09-28T21:33:29Z",
+   "timestamp": 1790631209000
+  },
+  "indexed": {
+   "date-parts": [
+    [
+     2026,
+     9,
+     28
+    ]
+   ],
+   "date-time": "2026-09-28T22:01:12Z",
+   "timestamp": 1790632872559,
+   "version": "4.1.0"
+  },
+  "institution": [
+   {
+    "id": [
+     {
+      "asserted-by": "publisher",
+      "id": "https://ror.org/03xjwb503",
+      "id-type": "ROR"
+     }
+    ],
+    "name": "université Paris-Saclay"
+   }
+  ],
+  "is-referenced-by-count": 0,
+  "issued": {
+   "date-parts": [
+    [
+     null
+    ]
+   ]
+  },
+  "member": "51494",
+  "original-title": [],
+  "prefix": "10.70675",
+  "publisher": "Agence Bibliographique de l'Enseignement Supérieur",
+  "reference-count": 313,
+  "references-count": 313,
+  "relation": {},
+  "resource": {
+   "primary": {
+    "URL": "https://theses.fr/2023UPASM033"
+   }
+  },
+  "score": 1,
+  "short-container-title": [],
+  "short-title": [],
+  "source": "Crossref",
+  "subject": [],
+  "subtitle": [],
+  "title": [
+   "Transport of probability distributions across different Euclidean spaces"
+  ],
+  "type": "dissertation"
+ },
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "status": "ok"
+}

@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "Affine rigidity and Gaussian exactness in squared-distance Gromov–Wasserstein transport"
+type: software
+authors:
+  - name: Anonymous
+version: 0.1.0-candidate
+doi: 10.5281/zenodo.23850758
+date-released: 2026-11-01
+repository-code: "https://github.com/ipitchford/gaussian-gromov-wasserstein-exactness"
+url: "https://evidencepress.org/releases/gaussian-gromov-wasserstein-exactness/"
+license:
+  - CC0-1.0
+  - MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23850758
+    description: "Version DOI (0.1.0-candidate)"
+  - type: doi
+    value: 10.5281/zenodo.23850757
+    description: "Concept DOI (all versions)"
+keywords:
+  - Gromov-Wasserstein
+  - optimal transport
+  - Gaussian measures
+  - affine rigidity
+  - approximation error
+abstract: "For squared-distance Gromov-Wasserstein transport, two positive-rank Gaussians admit a jointly Gaussian unrestricted optimiser if and only if their positive ranks agree and their ordered positive eigenvalues are proportional; otherwise an explicit Gaussian-preserving nonlinear coupling does strictly better. The Gaussian excess is bracketed on both sides and the Gaussian value is never more than twice the optimum. Necessity follows from an affine rigidity theorem. Unrefereed candidate; internal AI-assisted review only. Text, data and diagrams CC0-1.0; code MIT."

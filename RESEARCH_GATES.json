@@ -1,0 +1,206 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 1 November 2026 for release 0.1.0-candidate from the dated prior-art report (novelty_report.md, 31 October 2026, with the 1 November second pass), the round-one domain and devil's advocate reviews and the reference retrieval. It documents the scrutiny performed, not historical priority. No new search was run at release preparation.",
+ "contributionMap": [
+  {
+   "claim": "Necessity direction of the Gaussian exactness classification (Theorem 5): nonproportional positive spectra admit no jointly Gaussian unrestricted optimiser, including equal dimensions.",
+   "unit": "statement",
+   "paperLocation": "Theorem 5, Section 4",
+   "searches": [
+    {
+     "date": "2026-10-31",
+     "corpus": "two live web-search indexes; arXiv, publisher and proceedings sites; author pages; the OT4ML book PDF; OEIS (novelty_report.md sections 3-6)",
+     "query": "Gaussian Gromov Wasserstein optimal coupling conjecture nonGaussian; Gaussian Gromov Wasserstein exactness classification affine rigidity; proportional covariance eigenvalues; linear Gromov-Monge similarity; formula and sequence fingerprints 0, 12, 32, 60, 96"
+    },
+    {
+     "date": "2026-11-01",
+     "corpus": "domain-review second pass: full texts of arXiv:2104.07970v1, Salmona thesis chapter 4, Dumont et al., Zhang et al., Dandapanthula et al., Vayer thesis; Semantic Scholar citers of Delon et al. 2025-2026 (novelty_report.md section 11)",
+     "query": "necessity of proportional spectra; affine rigidity only-if; positive lower gap; Gaussian GW value unknown; citers of Delon-Desolneux-Salmona"
+    },
+    {
+     "date": "2026-11-01",
+     "corpus": "api.crossref.org, arXiv API",
+     "query": "registry records for every bibliography entry (crossref/)"
+    }
+   ],
+   "closestPriorWork": "Delon, Desolneux and Salmona 2022 (Gaussian-restricted value, sufficiency, upper bound, conjecture); Peyré 2026 (line versus high-dimensional space counterexample); Salmona 2023 thesis (counterexamples described as open); Dumont et al. 2025 and Zhang et al. 2024 (linearisation); Vayer 2020 (sufficient radial condition); Morel et al. 2023 (Gaussian-preserving flows)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Affine rigidity: an affine map is GW-optimal onto its image only if it is a similarity, for sources with interior support (Theorem 3, only-if direction).",
+   "unit": "statement",
+   "paperLocation": "Theorem 3, Section 3",
+   "searches": [
+    {
+     "date": "2026-10-31",
+     "corpus": "two live web-search indexes; arXiv, publisher and proceedings sites; author pages; the OT4ML book PDF; OEIS (novelty_report.md sections 3-6)",
+     "query": "Gaussian Gromov Wasserstein optimal coupling conjecture nonGaussian; Gaussian Gromov Wasserstein exactness classification affine rigidity; proportional covariance eigenvalues; linear Gromov-Monge similarity; formula and sequence fingerprints 0, 12, 32, 60, 96"
+    },
+    {
+     "date": "2026-11-01",
+     "corpus": "domain-review second pass: full texts of arXiv:2104.07970v1, Salmona thesis chapter 4, Dumont et al., Zhang et al., Dandapanthula et al., Vayer thesis; Semantic Scholar citers of Delon et al. 2025-2026 (novelty_report.md section 11)",
+     "query": "necessity of proportional spectra; affine rigidity only-if; positive lower gap; Gaussian GW value unknown; citers of Delon-Desolneux-Salmona"
+    }
+   ],
+   "closestPriorWork": "Vayer 2020 Proposition 4.2.4 (sufficient radial condition); Dumont et al. 2025 and Zhang et al. 2024 (linearisation)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Gaussian-preserving pair flow and exact first-variation slope as a descent method from the common-latent coupling.",
+   "unit": "method",
+   "paperLocation": "Lemma 6, Proposition 7, Section 5",
+   "searches": [
+    {
+     "date": "2026-10-31",
+     "corpus": "two live web-search indexes; arXiv, publisher and proceedings sites; author pages; the OT4ML book PDF; OEIS (novelty_report.md sections 3-6)",
+     "query": "Gaussian Gromov Wasserstein optimal coupling conjecture nonGaussian; Gaussian Gromov Wasserstein exactness classification affine rigidity; proportional covariance eigenvalues; linear Gromov-Monge similarity; formula and sequence fingerprints 0, 12, 32, 60, 96"
+    },
+    {
+     "date": "2026-11-01",
+     "corpus": "domain-review second pass: full texts of arXiv:2104.07970v1, Salmona thesis chapter 4, Dumont et al., Zhang et al., Dandapanthula et al., Vayer thesis; Semantic Scholar citers of Delon et al. 2025-2026 (novelty_report.md section 11)",
+     "query": "necessity of proportional spectra; affine rigidity only-if; positive lower gap; Gaussian GW value unknown; citers of Delon-Desolneux-Salmona"
+    }
+   ],
+   "closestPriorWork": "Morel et al. 2023 (Gaussian-preserving flows for ordinary OT); Peyré 2026 (construction for one versus n dimensions); classical Lotka-Volterra centre",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Positive lower bound on the Gaussian excess and pair-specific certificates (Theorem 8, Sections 6.1-6.2); factor-two corollary and its sharpness (Corollary 9).",
+   "unit": "statement",
+   "paperLocation": "Theorem 8, Corollary 9, Section 6",
+   "searches": [
+    {
+     "date": "2026-10-31",
+     "corpus": "two live web-search indexes; arXiv, publisher and proceedings sites; author pages; the OT4ML book PDF; OEIS (novelty_report.md sections 3-6)",
+     "query": "Gaussian Gromov Wasserstein optimal coupling conjecture nonGaussian; Gaussian Gromov Wasserstein exactness classification affine rigidity; proportional covariance eigenvalues; linear Gromov-Monge similarity; formula and sequence fingerprints 0, 12, 32, 60, 96"
+    },
+    {
+     "date": "2026-11-01",
+     "corpus": "domain-review second pass: full texts of arXiv:2104.07970v1, Salmona thesis chapter 4, Dumont et al., Zhang et al., Dandapanthula et al., Vayer thesis; Semantic Scholar citers of Delon et al. 2025-2026 (novelty_report.md section 11)",
+     "query": "necessity of proportional spectra; affine rigidity only-if; positive lower gap; Gaussian GW value unknown; citers of Delon-Desolneux-Salmona"
+    }
+   ],
+   "closestPriorWork": "Delon et al. 2022 eqs. (5.3)-(5.4) with Propositions 4.2 and 5.3 (upper bound)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Comonotone refinement (Proposition 10) and plug-in inconsistency (Lemma 11, Proposition 12).",
+   "unit": "statement",
+   "paperLocation": "Proposition 10, Lemma 11, Proposition 12",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "domain-review second pass: full texts of arXiv:2104.07970v1, Salmona thesis chapter 4, Dumont et al., Zhang et al., Dandapanthula et al., Vayer thesis; Semantic Scholar citers of Delon et al. 2025-2026 (novelty_report.md section 11)",
+     "query": "necessity of proportional spectra; affine rigidity only-if; positive lower gap; Gaussian GW value unknown; citers of Delon-Desolneux-Salmona"
+    }
+   ],
+   "closestPriorWork": "Classical one-dimensional rearrangement inequality (Villani 2009); Memoli 2011 gluing argument",
+   "verdict": "partially-known-cited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Delon, Desolneux and Salmona, J. Appl. Probab. 59(4) (2022), doi:10.1017/jpr.2022.16; arXiv:2104.07970v1",
+   "usedFor": "Gaussian-restricted value, common-latent optimiser, sufficiency, upper bound and the conjecture",
+   "readWhat": "All sections of arXiv v1 (its only version)",
+   "date": "2026-11-01",
+   "evidenceLocator": "novelty_report.md sections 6 (S1) and 11; manuscript Sections 1.3, 2, 6"
+  },
+  {
+   "citation": "Peyré, Optimal transport for machine learners (online book, 2026), Propositions 13.33-13.34; blog post of 23 October 2026",
+   "usedFor": "Prior counterexample for one versus n dimensions, n large",
+   "readWhat": "Full PDF section on Gaussian GW and the blog post",
+   "date": "2026-10-31",
+   "evidenceLocator": "novelty_report.md sections 6 (S2, S8); manuscript Section 1.3"
+  },
+  {
+   "citation": "Salmona, doctoral thesis, Université Paris-Saclay (2023), doi:10.70675/a8e13508z4193z4651za1f4z4f4199ba110c",
+   "usedFor": "Status of the conjecture (counterexamples described as open, section 4.2.5)",
+   "readWhat": "Chapter 4",
+   "date": "2026-11-01",
+   "evidenceLocator": "novelty_report.md section 11; manuscript Section 1.1"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Priority holds only within a bounded search.",
+   "closingQuestion": "Has the necessity direction or the affine rigidity statement been published elsewhere?",
+   "triedOrSearched": "Dated searches on 31 October and 1 November 2026, including full reading of the originating paper and thesis and the 2025-2026 citers.",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Exhaustive search out of scope; disclosed in the manuscript and README."
+  },
+  {
+   "limitation": "Unrestricted optimiser and value for nonproportional spectra.",
+   "closingQuestion": "What is Q_* for the plane-to-line pair, and is the optimiser a Monge map?",
+   "triedOrSearched": "Bracket [8.68, 10.85] proved; numerical couplings to about 10.03; moment-SOS relaxations (Tran and Soh 2026) noted as a route.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research; stated in Section 9."
+  },
+  {
+   "limitation": "Optimal constants in Theorem 8 (limit of D/S as S -> 0).",
+   "closingQuestion": "Are the constants in (15) sharp?",
+   "triedOrSearched": "Sharper certificates of Sections 6.1-6.2; numerical comparisons in Table 1.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research."
+  },
+  {
+   "limitation": "Values labelled numerical are not interval enclosures.",
+   "closingQuestion": "Could interval arithmetic certify M_co and the coupling objectives?",
+   "triedOrSearched": "Two independent mpmath methods agree to better than 1e-20 for M_co; proved values (76/7, 10.8404, 8.6863) do not depend on them.",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Not load-bearing for any theorem; labelled numerical throughout."
+  },
+  {
+   "limitation": "Finite-sample behaviour of plug-in estimators.",
+   "closingQuestion": "What are the rates in Proposition 12?",
+   "triedOrSearched": "Population inconsistency proved; a POT solver experiment was declined as illustrative only.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research."
+  },
+  {
+   "limitation": "Entropic, inner-product and ordinary-distance GW; finite-cloud Theorem 3.",
+   "closingQuestion": "Do analogues hold?",
+   "triedOrSearched": "Section 9 explains why the inner-product case differs; the four-point example shows finite clouds can escape Theorem 3.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Different problems; stated as open."
+  },
+  {
+   "limitation": "Curvature bound checked only at time zero (round-one objection).",
+   "closingQuestion": "Does the bound hold along whole flow paths?",
+   "triedOrSearched": "extension_checks.py part (f): seven nonproportional cases, worst ratio 0.921.",
+   "estimatedCost": "1 hour",
+   "decision": "CLOSED",
+   "cheap": true
+  }
+ ],
+ "extensionScout": {
+  "by": "Internal AI-assisted reviewers and the editor, 31 October to 1 November 2026",
+  "date": "2026-11-01",
+  "proposals": [
+   "State the size of the error relative to the Gaussian value",
+   "Bracket the plane-to-line optimum",
+   "Address plug-in use on sample covariances",
+   "Add an equal-dimension example",
+   "Check curvature along whole paths"
+  ],
+  "actions": [
+   "Corollary 9 with sharpness, Table 1, Section 6.3 recipe and gw_gaussian_bracket.py",
+   "Proposition 10 and Table 2",
+   "Lemma 11 and Proposition 12",
+   "Section 7 equal-dimension example",
+   "extension_checks.py part (f)"
+  ]
+ }
+}

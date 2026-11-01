@@ -1,0 +1,22 @@
+Plane-to-line, a=(1,1), b=(1):
+{
+  "Q_G": 12.0,
+  "Q_star_interval": [
+    8.686291501015239,
+    10.840408205773457
+  ],
+  "lower_gap": 1.1595917942265426,
+  "upper_gap": 3.313708498984761,
+  "upper_gap_source": "8(A2B2-a.b)",
+  "relative_lower_gap": 0.09663264951887855,
+  "relative_upper_gap": 0.2761423749153968,
+  "cos_theta": 0.7071067811865475,
+  "S": 1.0,
+  "K_C": 27.595917942265423,
+  "certificates": {
+    "S_over_A2B2": 0.7071067811865475,
+    "sharp_32S2_over_KC": 1.1595917942265426,
+    "best_pair_32D2_over_Kij": 1.1595917942265426
+  },
+  "certified_time_4S_over_KC": 0.14494897427831782
+}

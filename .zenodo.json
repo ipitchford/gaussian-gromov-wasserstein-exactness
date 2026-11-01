@@ -1,0 +1,109 @@
+{
+  "title": "Affine rigidity and Gaussian exactness in squared-distance Gromov–Wasserstein transport",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "<p><strong>Unrefereed research candidate.</strong> Gromov&ndash;Wasserstein (GW) transport compares distributions living in different spaces by matching internal pairwise distances. For Gaussian data, Delon, Desolneux and Salmona (2022) gave a closed form by restricting to Gaussian couplings and conjectured that the restriction loses nothing. For the squared-distance objective this paper shows that two positive-rank Gaussians admit a jointly Gaussian unrestricted optimiser if and only if their positive ranks agree and their ordered positive eigenvalues are proportional; otherwise, including equal dimensions, an explicit Gaussian-preserving nonlinear coupling does strictly better. The Gaussian excess is bracketed on both sides, the Gaussian value is never more than twice the optimum (sharp in the limit), the necessity direction follows from an affine rigidity theorem (an affine map is optimal onto its image only if it is a similarity, for sources with interior support), and the plug-in Gaussian formula on sample covariances is inconsistent for nonproportional spectra. Example: standard Gaussian plane to standard Gaussian line, Gaussian value 12, a coupling certified below 76/7 (about 10.47 numerically), and the optimum between 8.68 and 10.85. Peyr&eacute; (October 2026) gave the first counterexample, for a line against a sufficiently high-dimensional space.</p><p>The archive contains the manuscript (PDF, Markdown source and generated LaTeX), proof outline, frozen target, prior-art search record, the bibliography with its Crossref and arXiv records, seven checking scripts with retained outputs (exact rational identities, finite checks, quadrature and high-precision numerical brackets), negative controls, a replay comparer, CI and SHA-256 sums. Assurance: written proofs and computational checks; internal AI-assisted review only (not peer review, independent reproduction or formal verification). Creator: Anonymous. Text, data and diagrams CC0-1.0; code MIT.</p>",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-zero",
+  "version": "0.1.0-candidate",
+  "publication_date": "2026-11-01",
+  "keywords": [
+    "Gromov-Wasserstein",
+    "optimal transport",
+    "Gaussian measures",
+    "Gaussian coupling",
+    "affine rigidity",
+    "linear Gromov-Monge",
+    "measure-preserving flow",
+    "approximation error"
+  ],
+  "notes": "Code (all .py and .sh files and the CI workflow) is MIT; prose, manuscript, figures and data are CC0-1.0.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/gaussian-gromov-wasserstein-exactness/tree/v0.1.0-candidate",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://evidencepress.org/releases/gaussian-gromov-wasserstein-exactness/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1007/s10208-024-09678-3",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1017/jpr.2022.16",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s10208-024-09643-0",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s10208-011-9093-5",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.70675/a8e13508z4193z4651za1f4z4f4199ba110c",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/978-3-540-71050-9",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1214/24-aos2406",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "arXiv:2512.03579",
+      "relation": "references",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "arXiv:2209.10873",
+      "relation": "references",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "arXiv:2608.24184",
+      "relation": "references",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "arXiv:2402.02239",
+      "relation": "references",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "arXiv:2011.04447",
+      "relation": "references",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "arXiv:2104.07970",
+      "relation": "references",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "arXiv:2210.11945",
+      "relation": "references",
+      "scheme": "arxiv"
+    }
+  ],
+  "doi": "10.5281/zenodo.23850758"
+}

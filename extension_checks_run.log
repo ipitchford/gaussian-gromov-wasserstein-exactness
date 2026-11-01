@@ -1,0 +1,14 @@
+{
+  "timings_seconds": {
+    "a_factor_two": 1.0704804580891505,
+    "b_comonotone": 2.949667999986559,
+    "c_plane_to_line": 72.1070433750283,
+    "d_equal_dim": 0.363293084083125,
+    "e_realistic": 128.29174570797477,
+    "f_path_curvature": 161.59841162501834,
+    "g_near_isotropic": 0.004781958064995706
+  },
+  "elapsed_seconds": 366.3859561670106,
+  "explicit_checks_passed": 65675,
+  "status": "PASS"
+}

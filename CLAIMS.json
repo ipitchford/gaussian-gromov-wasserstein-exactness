@@ -1,0 +1,103 @@
+{
+ "schemaVersion": "1.0",
+ "release": "gaussian-gromov-wasserstein-exactness",
+ "version": "0.1.0-candidate",
+ "doi": "10.5281/zenodo.23850758",
+ "conceptDoi": "10.5281/zenodo.23850757",
+ "creator": "Anonymous",
+ "status": "unrefereed candidate",
+ "model": "Squared-distance Gromov-Wasserstein objective Q(pi) = E[(|X - X'|^2 - |Y - Y'|^2)^2] between Gaussian (or, for Theorem 3, general finite-fourth-moment) probability measures on Euclidean spaces of possibly different dimensions; Q_* is the unrestricted minimum over couplings and Q_G the minimum over jointly Gaussian couplings.",
+ "definitions": {
+  "Q_G": "minimum of Q over jointly Gaussian couplings, = 4(alpha - beta)^2 + 8|a - b|^2 for zero-padded sorted spectra a, b with traces alpha, beta (Delon et al. 2022)",
+  "D": "Gaussian excess Q_G - Q_*",
+  "S": "|a|^2|b|^2 - (a.b)^2",
+  "proportional spectra": "equal positive rank and ordered positive eigenvalues in a constant ratio"
+ },
+ "claims": [
+  {
+   "id": "C1",
+   "kind": "theorem",
+   "location": "Theorem 5, Section 4",
+   "statement": "Two Gaussian measures of positive covariance rank admit a jointly Gaussian unrestricted optimiser of Q if and only if their positive ranks agree and their ordered positive covariance eigenvalues are proportional (equivalently Q_* = Q_G). In particular the conjecture of Delon, Desolneux and Salmona fails for every other pair, including pairs of equal dimension.",
+   "scope": "All means and ambient dimensions; sufficiency is due to Delon et al. (2022), necessity is the proposed contribution.",
+   "evidence": "written proof in affine_rigidity_gaussian_gw.pdf"
+  },
+  {
+   "id": "C2",
+   "kind": "theorem",
+   "location": "Theorem 3, Section 3",
+   "statement": "If the source has finite fourth moment and support with nonempty relative interior in its affine hull, an affine map is GW-optimal onto its image if and only if it is a similarity or a constant.",
+   "scope": "Squared-distance objective; the four-point example shows that finite supports can escape the conclusion.",
+   "evidence": "written proof in affine_rigidity_gaussian_gw.pdf"
+  },
+  {
+   "id": "C3",
+   "kind": "theorem",
+   "location": "Lemma 6, Proposition 7, Section 5",
+   "statement": "An explicit pair flow preserves the standard Gaussian, and its first variation gives the maximal Gaussian-preserving slope of the objective at the common-latent coupling; it strictly improves the Gaussian benchmark whenever the zero-padded spectra are not proportional.",
+   "scope": "Gaussian marginals.",
+   "evidence": "written proof in affine_rigidity_gaussian_gw.pdf"
+  },
+  {
+   "id": "C4",
+   "kind": "theorem",
+   "location": "Theorem 8, Section 6",
+   "statement": "With zero-padded eigenvalue lists a, b and S = |a|^2|b|^2 - (a.b)^2, the Gaussian excess D = Q_G - Q_* satisfies S/(|a||b|) <= D <= 8(|a||b| - a.b).",
+   "scope": "Lower bound new; upper bound due to Delon et al. (2022). Sharper pair-specific certificates in Sections 6.1-6.2.",
+   "evidence": "written proof in affine_rigidity_gaussian_gw.pdf"
+  },
+  {
+   "id": "C5",
+   "kind": "corollary",
+   "location": "Corollary 9",
+   "statement": "Q_G/2 <= Q_* <= Q_G for all Gaussian pairs of positive covariance rank, and the constant 1/2 is approached by nearly isotropic spectra in high dimension.",
+   "scope": "Upper half immediate from the known upper bound; sharpness family checked numerically for d in {2, 5, 50, 500}.",
+   "evidence": "written proof in affine_rigidity_gaussian_gw.pdf"
+  },
+  {
+   "id": "C6",
+   "kind": "proposition",
+   "location": "Proposition 10",
+   "statement": "A comonotone integral M_co gives a refinement of the known upper bound on the excess.",
+   "scope": "The plane-to-line value M_co = 4.79528... is evaluated numerically (two independent high-precision methods), not as an interval enclosure.",
+   "evidence": "written proof in affine_rigidity_gaussian_gw.pdf"
+  },
+  {
+   "id": "C7",
+   "kind": "proposition",
+   "location": "Lemma 11, Proposition 12, Section 8",
+   "statement": "GW between finite-fourth-moment measures is stable under perturbation (triangle inequality and stability), and the plug-in Gaussian formula evaluated at sample covariances is an inconsistent estimator of the population GW value between nonproportional Gaussians.",
+   "scope": "Population and almost-sure limit statement; no finite-sample rates.",
+   "evidence": "written proof in affine_rigidity_gaussian_gw.pdf"
+  },
+  {
+   "id": "C8",
+   "kind": "example",
+   "location": "Section 1.1, Section 7, Table 2",
+   "statement": "Plane to line (N(0, I_2) to N(0, 1)): the Gaussian value is 12; an explicit coupling has objective below 76/7 (proved; about 10.47 numerically); 12 - 8(sqrt 2 - 1) = 8.6863 <= Q_* <= 12 - 4/(1 + sqrt 6) = 10.8404 (proved).",
+   "scope": "Numerical couplings reach about 10.03 and a numerically evaluated lower refinement gives about 8.82; these are not certified enclosures.",
+   "evidence": "written proof in affine_rigidity_gaussian_gw.pdf; exact and numerical checks in VERIFICATION.md"
+  },
+  {
+   "id": "C9",
+   "kind": "example",
+   "location": "Section 7",
+   "statement": "Equal dimensions a = (2, 1), b = (1, 1): 10.70 <= Q_* <= 11.41 < Q_G = 12.",
+   "scope": "Bracket from Theorem 8 and its refinements.",
+   "evidence": "written proof in affine_rigidity_gaussian_gw.pdf; exact and numerical checks in VERIFICATION.md"
+  }
+ ],
+ "computedNotProved": [
+  "M_co = 4.79528098495884 and the lower bound 8.81888 (mpmath, two methods agree to better than 1e-20)",
+  "objective 10.4697 at t = 1/7, 10.2995 at the best time, 10.0321 for the rearrangement coupling (quadrature)",
+  "Table 1 relative brackets for realistic spectra"
+ ],
+ "notClaimed": [
+  "the unrestricted optimiser or value for nonproportional spectra",
+  "optimal constants in Theorem 8",
+  "finite-sample rates",
+  "entropic, inner-product or ordinary-distance GW",
+  "a finite-cloud version of Theorem 3"
+ ],
+ "assurance": "Written proofs and exact, finite and numerical computational checks with negative controls; internal AI-assisted review only; not peer-reviewed, independently reproduced or formally verified."
+}

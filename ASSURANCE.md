@@ -1,0 +1,18 @@
+# Assurance boundary
+
+## What was done
+
+1. **Written proofs** in the manuscript ([affine_rigidity_gaussian_gw.pdf](affine_rigidity_gaussian_gw.pdf); source [manuscript.md](manuscript.md)), with the proof architecture in [proof_outline.md](proof_outline.md).
+2. **Computational checks.** Seven scripts ([VERIFICATION.md](VERIFICATION.md)): exact rational identities (the Gaussian divergence of the pair field, moment derivatives, generator norms, the rational certificate Q < 76/7, all 441 sorted two-coordinate integer spectrum pairs with entries 0 to 5); a separately written rational-polynomial audit of 28 identities; simultaneous-field identities on 120 integer spectra in dimensions 2 to 4; the four-point finite example and flow reductions; whole-path curvature checks, the factor-two corollary on 1,156 integer and 20,000 random pairs, Tables 1 and 2 and the sharpness family; quadrature and ODE integration of the plane-to-line flow. Every check raises an error on failure (no `assert`), so it remains active under `python -O`.
+3. **Negative controls.** [negative_controls.py](negative_controls.py) plants one false value in each of six checkers and confirms each run fails, under `python -I` and `python -I -O` (12/12 detected).
+4. **Internal AI-assisted review.** Five reviewer roles (editor, methodology/proof, domain, perspective, devil's advocate) as Claude Code subagents; an adversarial review and, after revision, an audit of the new proofs by a separate model (OpenAI Codex, through a local companion tool); a separate proof audit of the revision; a clean replay of the handoff bundle from fresh extraction (all outputs identical apart from run-time fields); one revision round; a re-review of the revision against every round-one objection. A rating-free summary is in [REVIEW_SUMMARY.md](REVIEW_SUMMARY.md).
+5. **Replay.** From a fresh extraction of the frozen archive, every checker was rerun with `-I -O -B` in a temporary copy by [tools/replay_compare.py](tools/replay_compare.py) and the regenerated outputs were compared with the retained ones (numbers within a relative tolerance of 1e-7; run-time and interpreter fields ignored); see [REPLAY_RECEIPT.md](REPLAY_RECEIPT.md). CI reruns the quick checks (exact checkers and negative controls) on Linux as a blocking job and the full suite as a non-blocking job.
+6. **Citations.** Every reference with a DOI or arXiv identifier was copied from its Crossref or arXiv record ([crossref/](crossref/), [refs.bib](refs.bib)); DOIs were checked against the registries at release.
+
+## What was not done
+
+- No human specialist or journal peer review, no independent reproduction by an unaffiliated party, no proof-assistant formalisation.
+- Finite and numerical checks corroborate formulas and implementations; the theorems rest on the written proofs. Values labelled numerical in the paper (for example 10.47, 10.03 and about 8.82 in the plane-to-line example) are floating-point quadrature or high-precision evaluations, not interval enclosures.
+- **Priority is bounded** by the documented searches in [novelty_report.md](novelty_report.md). Sufficiency of proportional spectra, the Gaussian-restricted value and the upper bound on the excess are due to Delon, Desolneux and Salmona (2022); Peyré (October 2026) gave the first counterexample (a line against a sufficiently high-dimensional space); the GW linearisation and Gaussian-preserving rearrangements are established tools.
+- **Scope is narrow:** squared-distance GW with squared loss between Gaussian marginals. The unrestricted optimum for nonproportional spectra is not computed.
+- Agreement between AI reviewers is not independent evidence.

@@ -1,0 +1,26 @@
+{
+  "python": "3.11.14",
+  "numpy": "2.3.5",
+  "cases": 120,
+  "dimensions": [
+    2,
+    3,
+    4
+  ],
+  "quadrature_order_each_coordinate": 5,
+  "spectral_entries": "sorted integers 0 through 6, deterministic seed 73331",
+  "max_scaled_residuals": {
+    "generator_norm": 5.023444914514931e-16,
+    "score_derivative": 4.163336342344337e-17,
+    "field_norm": 3.9990604227601863e-17,
+    "weighted_divergence": 3.35161667811368e-17,
+    "lagrange": 0.0,
+    "Ca_norm": 0.0,
+    "Cb_norm": 0.0
+  },
+  "old_rational_bound": "100/9",
+  "new_rational_bound": "76/7",
+  "elapsed_seconds": 0.029187874984927475,
+  "optimisation_flag": "none",
+  "status": "All finite checks passed. General proofs remain analytic."
+}

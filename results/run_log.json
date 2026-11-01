@@ -1,0 +1,193 @@
+{
+  "python": "3.11.14",
+  "exact_checks": [
+    {
+      "name": "Gaussian divergence identity",
+      "status": "passed",
+      "value": "{}"
+    },
+    {
+      "name": "radial derivative",
+      "status": "passed",
+      "value": "{(2, 0): -2, (0, 2): 2}"
+    },
+    {
+      "name": "covariance derivative uV1",
+      "status": "passed",
+      "value": "0"
+    },
+    {
+      "name": "covariance derivative vV1",
+      "status": "passed",
+      "value": "0"
+    },
+    {
+      "name": "covariance derivative uV2",
+      "status": "passed",
+      "value": "0"
+    },
+    {
+      "name": "covariance derivative vV2",
+      "status": "passed",
+      "value": "0"
+    },
+    {
+      "name": "V1 squared norm",
+      "status": "passed",
+      "value": "2"
+    },
+    {
+      "name": "V2 squared norm",
+      "status": "passed",
+      "value": "2"
+    },
+    {
+      "name": "L u2 squared norm",
+      "status": "passed",
+      "value": "24"
+    },
+    {
+      "name": "L v2 squared norm",
+      "status": "passed",
+      "value": "24"
+    },
+    {
+      "name": "L u2 L v2 cross moment",
+      "status": "passed",
+      "value": "-16"
+    },
+    {
+      "name": "u L2 u",
+      "status": "passed",
+      "value": "-2"
+    },
+    {
+      "name": "v L2 v",
+      "status": "passed",
+      "value": "-2"
+    },
+    {
+      "name": "M' coefficient ai bi",
+      "status": "passed",
+      "value": "0"
+    },
+    {
+      "name": "M' coefficient ai bj",
+      "status": "passed",
+      "value": "-4"
+    },
+    {
+      "name": "M' coefficient aj bi",
+      "status": "passed",
+      "value": "4"
+    },
+    {
+      "name": "M' coefficient aj bj",
+      "status": "passed",
+      "value": "0"
+    },
+    {
+      "name": "M'' coefficient ai bi",
+      "status": "passed",
+      "value": "-24"
+    },
+    {
+      "name": "M'' coefficient ai bj",
+      "status": "passed",
+      "value": "16"
+    },
+    {
+      "name": "M'' coefficient aj bi",
+      "status": "passed",
+      "value": "16"
+    },
+    {
+      "name": "M'' coefficient aj bj",
+      "status": "passed",
+      "value": "-24"
+    },
+    {
+      "name": "sorted integer spectrum pairs, coordinates 0 through 5",
+      "status": "passed",
+      "cases": 441
+    },
+    {
+      "name": "certified score gain at t=1/7",
+      "status": "passed",
+      "value": "2/7"
+    },
+    {
+      "name": "certified objective upper bound",
+      "status": "passed",
+      "value": "76/7"
+    }
+  ],
+  "formal_proof_assistant": "not used",
+  "numerical": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "ode_method": "DOP853",
+    "rtol": 2e-11,
+    "atol": 2e-12,
+    "quadrature_orders": [
+      64,
+      128,
+      256,
+      384
+    ],
+    "max_objective_difference_orders_256_384": 8.262008394055442e-05,
+    "explicit_example": {
+      "order": 384,
+      "time": 0.14285714285714285,
+      "objective": 10.469618805231612,
+      "mixed_moment": 4.457728008666363,
+      "corr_u": 0.98103702530173,
+      "corr_v": 0.9810368856820877,
+      "marginal_second_error": 3.845885268027871e-07,
+      "marginal_fourth_error": 3.229258343218078e-05,
+      "gaussian_objective": 12.0
+    },
+    "finite_difference_at_zero": -15.993597867520748,
+    "exact_derivative_at_zero": -16,
+    "proportional_control": [
+      {
+        "order": 64,
+        "time": 0.0,
+        "objective": 76.00000000000003,
+        "mixed_moment": 38.0,
+        "corr_u": 0.9999999999999998,
+        "corr_v": 1.0,
+        "marginal_second_error": 2.220446049250313e-16,
+        "marginal_fourth_error": 0.0,
+        "gaussian_objective": 76.0
+      },
+      {
+        "order": 64,
+        "time": 0.05,
+        "objective": 76.94861697178095,
+        "mixed_moment": 37.86170969102482,
+        "corr_u": 0.9975253396789133,
+        "corr_v": 0.9975253396788271,
+        "marginal_second_error": 3.517186542012496e-13,
+        "marginal_fourth_error": 1.0789591442517121e-10,
+        "gaussian_objective": 76.0
+      },
+      {
+        "order": 64,
+        "time": 0.1,
+        "objective": 79.67366004199738,
+        "mixed_moment": 37.46464315269545,
+        "corr_u": 0.9903772653224205,
+        "corr_v": 0.9903771748840121,
+        "marginal_second_error": 2.756322516894727e-07,
+        "marginal_fourth_error": 2.8671711717720427e-05,
+        "gaussian_objective": 76.0
+      }
+    ],
+    "scope": "Floating-point quadrature and ODE illustrations, not certified global optima.",
+    "status": "passed"
+  },
+  "elapsed_seconds": 19.600095124915242,
+  "optimisation_flag": "none",
+  "status": "PASS"
+}

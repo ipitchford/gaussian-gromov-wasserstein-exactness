@@ -1,0 +1,305 @@
+{
+ "message": {
+  "DOI": "10.1007/s10208-024-09678-3",
+  "ISSN": [
+   "1615-3375",
+   "1615-3383"
+  ],
+  "URL": "https://doi.org/10.1007/s10208-024-09678-3",
+  "alternative-id": [
+   "9678"
+  ],
+  "assertion": [
+   {
+    "group": {
+     "label": "Article History",
+     "name": "ArticleHistory"
+    },
+    "label": "Received",
+    "name": "received",
+    "order": 1,
+    "value": "9 August 2023"
+   },
+   {
+    "group": {
+     "label": "Article History",
+     "name": "ArticleHistory"
+    },
+    "label": "Accepted",
+    "name": "accepted",
+    "order": 2,
+    "value": "25 July 2024"
+   },
+   {
+    "group": {
+     "label": "Article History",
+     "name": "ArticleHistory"
+    },
+    "label": "First Online",
+    "name": "first_online",
+    "order": 3,
+    "value": "16 September 2024"
+   }
+  ],
+  "author": [
+   {
+    "affiliation": [],
+    "family": "Arya",
+    "given": "Shreya",
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ],
+    "sequence": "first"
+   },
+   {
+    "affiliation": [],
+    "family": "Auddy",
+    "given": "Arnab",
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ],
+    "sequence": "additional"
+   },
+   {
+    "affiliation": [],
+    "family": "Clark",
+    "given": "Ranthony A.",
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ],
+    "sequence": "additional"
+   },
+   {
+    "affiliation": [],
+    "family": "Lim",
+    "given": "Sunhyuk",
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ],
+    "sequence": "additional"
+   },
+   {
+    "affiliation": [],
+    "family": "Mémoli",
+    "given": "Facundo",
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ],
+    "sequence": "additional"
+   },
+   {
+    "affiliation": [],
+    "family": "Packer",
+    "given": "Daniel",
+    "role": [
+     {
+      "role": "author",
+      "vocabulary": "crossref"
+     }
+    ],
+    "sequence": "additional"
+   }
+  ],
+  "container-title": [
+   "Foundations of Computational Mathematics"
+  ],
+  "content-domain": {
+   "crossmark-restriction": false,
+   "domain": [
+    "link.springer.com"
+   ]
+  },
+  "created": {
+   "date-parts": [
+    [
+     2024,
+     9,
+     16
+    ]
+   ],
+   "date-time": "2024-09-16T14:06:41Z",
+   "timestamp": 1726495601000
+  },
+  "deposited": {
+   "date-parts": [
+    [
+     2026,
+     3,
+     4
+    ]
+   ],
+   "date-time": "2026-03-04T18:15:47Z",
+   "timestamp": 1772648147000
+  },
+  "indexed": {
+   "date-parts": [
+    [
+     2026,
+     8,
+     17
+    ]
+   ],
+   "date-time": "2026-08-17T15:29:44Z",
+   "timestamp": 1786980584620,
+   "version": "build-2736575974"
+  },
+  "is-referenced-by-count": 6,
+  "issn-type": [
+   {
+    "type": "print",
+    "value": "1615-3375"
+   },
+   {
+    "type": "electronic",
+    "value": "1615-3383"
+   }
+  ],
+  "issue": "1",
+  "issued": {
+   "date-parts": [
+    [
+     2024,
+     9,
+     16
+    ]
+   ]
+  },
+  "journal-issue": {
+   "issue": "1",
+   "published-print": {
+    "date-parts": [
+     [
+      2026,
+      2
+     ]
+    ]
+   }
+  },
+  "language": "en",
+  "license": [
+   {
+    "URL": "https://creativecommons.org/licenses/by/4.0",
+    "content-version": "tdm",
+    "delay-in-days": 0,
+    "start": {
+     "date-parts": [
+      [
+       2024,
+       9,
+       16
+      ]
+     ],
+     "date-time": "2024-09-16T00:00:00Z",
+     "timestamp": 1726444800000
+    }
+   },
+   {
+    "URL": "https://creativecommons.org/licenses/by/4.0",
+    "content-version": "vor",
+    "delay-in-days": 0,
+    "start": {
+     "date-parts": [
+      [
+       2024,
+       9,
+       16
+      ]
+     ],
+     "date-time": "2024-09-16T00:00:00Z",
+     "timestamp": 1726444800000
+    }
+   }
+  ],
+  "link": [
+   {
+    "URL": "https://link.springer.com/content/pdf/10.1007/s10208-024-09678-3.pdf",
+    "content-type": "application/pdf",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   },
+   {
+    "URL": "https://link.springer.com/article/10.1007/s10208-024-09678-3",
+    "content-type": "text/html",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   },
+   {
+    "URL": "https://link.springer.com/content/pdf/10.1007/s10208-024-09678-3.pdf",
+    "content-type": "application/pdf",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "member": "297",
+  "original-title": [],
+  "page": "75-130",
+  "prefix": "10.1007",
+  "published": {
+   "date-parts": [
+    [
+     2024,
+     9,
+     16
+    ]
+   ]
+  },
+  "published-online": {
+   "date-parts": [
+    [
+     2024,
+     9,
+     16
+    ]
+   ]
+  },
+  "published-print": {
+   "date-parts": [
+    [
+     2026,
+     2
+    ]
+   ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference-count": 55,
+  "references-count": 55,
+  "relation": {},
+  "resource": {
+   "primary": {
+    "URL": "https://link.springer.com/10.1007/s10208-024-09678-3"
+   }
+  },
+  "score": 1,
+  "short-container-title": [
+   "Found Comput Math"
+  ],
+  "short-title": [],
+  "source": "Crossref",
+  "subject": [],
+  "subtitle": [],
+  "title": [
+   "The Gromov–Wasserstein Distance Between Spheres"
+  ],
+  "type": "journal-article",
+  "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+  "volume": "26"
+ },
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "status": "ok"
+}

@@ -1,0 +1,1291 @@
+{
+  "python": "3.11.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "mpmath": "1.4.1",
+  "a_factor_two": {
+    "statement": "Q_G = 4(alpha-beta)^2 + 8||a-b||^2 >= 16(A2B2 - a.b), hence 8(A2B2 - a.b) <= Q_G/2 and Q_G/2 <= Q_* <= Q_G",
+    "exact_integer_pairs_d3_entries_0_to_4": 1156,
+    "random_trials": 20000,
+    "seed": 20261031,
+    "max_upper_gap_over_QG_random": 0.49888725989139987,
+    "worst_random_case(d,da,db,kind)": [
+      10,
+      4,
+      4,
+      0
+    ],
+    "named_cases": {
+      "plane->line": {
+        "upper_dds_over_QG": 0.2761423749153968
+      },
+      "(2,1) vs (1,1)": {
+        "upper_dds_over_QG": 0.10818510677891968
+      }
+    },
+    "status": "passed"
+  },
+  "b_comonotone": {
+    "statement": "Q_* >= C - 4(M_co + 2 a.b), i.e. D <= 4(M_co - alpha beta - 2 a.b), M_co = int_0^1 F^{-1}_{|X|^2}(u) F^{-1}_{|Y|^2}(u) du",
+    "plane_to_line": {
+      "M_co_form1_mpmath": "4.7952809849588386209",
+      "M_co_form2_mpmath": "4.7952809849588386209",
+      "mpmath_dps": 30,
+      "cauchy_schwarz_value_2_plus_sqrt8": "4.8284271247461900976",
+      "lower_bound_Q_star_comonotone": "8.818876060164646",
+      "lower_bound_Q_star_cauchy_schwarz": "8.68629150101524",
+      "improvement": "0.132584559149",
+      "label": "certified inequality; integral evaluated by mpmath tanh-sinh quadrature in two independent forms (agreement < 1e-20), not interval arithmetic"
+    },
+    "machinery_validation": {
+      "exact_quantiles_vs_mpmath": 5.329070518200751e-15,
+      "two_weight_quantiles_vs_mpmath": 6.217248937900877e-15,
+      "imhof_vs_exact_chi2_max_quantile_error": {
+        "chi2_8_x1.0": 9.075264983948728e-10,
+        "chi2_20_x0.05": 8.05819411198172e-09
+      }
+    },
+    "general_cases": {
+      "line_vs_R2": {
+        "a": [
+          1.0,
+          1.0
+        ],
+        "b": [
+          1.0
+        ],
+        "M_co": 4.795280984958834,
+        "Q_G": 12,
+        "lower_Q_comonotone": 8.818876060164666,
+        "lower_Q_cauchy_schwarz": 8.686291501015239,
+        "improvement": 0.1325845591494268,
+        "method": [
+          "exact scipy chi2(2) quantiles",
+          "exact scipy chi2(1) quantiles"
+        ]
+      },
+      "line_vs_R3": {
+        "a": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "b": [
+          1.0
+        ],
+        "M_co": 6.374665278067987,
+        "Q_G": 32,
+        "lower_Q_comonotone": 26.501338887728053,
+        "lower_Q_cauchy_schwarz": 26.143593539448982,
+        "improvement": 0.3577453482790709,
+        "method": [
+          "exact scipy chi2(3) quantiles",
+          "exact scipy chi2(1) quantiles"
+        ]
+      },
+      "line_vs_R4": {
+        "a": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "b": [
+          1.0
+        ],
+        "M_co": 7.851065409594339,
+        "Q_G": 60,
+        "lower_Q_comonotone": 52.595738361622644,
+        "lower_Q_cauchy_schwarz": 52.0,
+        "improvement": 0.5957383616226437,
+        "method": [
+          "exact scipy chi2(4) quantiles",
+          "exact scipy chi2(1) quantiles"
+        ]
+      },
+      "line_vs_R5": {
+        "a": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "b": [
+          1.0
+        ],
+        "M_co": 9.264754011276292,
+        "Q_G": 96,
+        "lower_Q_comonotone": 86.94098395489483,
+        "lower_Q_cauchy_schwarz": 86.11145618000168,
+        "improvement": 0.8295277748931511,
+        "method": [
+          "exact scipy chi2(5) quantiles",
+          "exact scipy chi2(1) quantiles"
+        ]
+      },
+      "line_vs_R6": {
+        "a": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "b": [
+          1.0
+        ],
+        "M_co": 10.63526724159545,
+        "Q_G": 140,
+        "lower_Q_comonotone": 129.4589310336182,
+        "lower_Q_cauchy_schwarz": 128.40408205773457,
+        "improvement": 1.0548489758836297,
+        "method": [
+          "exact scipy chi2(6) quantiles",
+          "exact scipy chi2(1) quantiles"
+        ]
+      },
+      "a=(2,1),b=(1,1)": {
+        "a": [
+          2.0,
+          1.0
+        ],
+        "b": [
+          1.0,
+          1.0
+        ],
+        "M_co_minus_alpha_beta": 6.3182540000621765,
+        "Q_G": 12.0,
+        "upper_gap_comonotone": 1.273016000248706,
+        "upper_gap_dds": 1.2982212813470362,
+        "lower_Q_comonotone": 10.726983999751294,
+        "lower_Q_cauchy_schwarz": 10.701778718652964,
+        "method": [
+          "Gauss-Legendre (256) after z1=sqrt(x/l1) sin t; bisection",
+          "exact scipy chi2(2) quantiles"
+        ],
+        "diagnostics": {
+          "int_QR_minus_mean": -1.9984014443252818e-15,
+          "int_QS_minus_mean": -3.3306690738754696e-16,
+          "int_QR2_minus_second_moment": -1.1723955140041653e-13,
+          "int_QS2_minus_second_moment": -2.842170943040401e-14,
+          "s_grid_16_vs_24_difference": 0.0
+        }
+      },
+      "a=(3,1),b=(1)": {
+        "a": [
+          3.0,
+          1.0
+        ],
+        "b": [
+          1.0
+        ],
+        "M_co_minus_alpha_beta": 6.3055607402589615,
+        "Q_G": 76.0,
+        "upper_gap_comonotone": 1.222242961035846,
+        "upper_gap_dds": 1.2982212813470362,
+        "lower_Q_comonotone": 74.77775703896415,
+        "lower_Q_cauchy_schwarz": 74.70177871865296,
+        "method": [
+          "Gauss-Legendre (256) after z1=sqrt(x/l1) sin t; bisection",
+          "exact scipy chi2(1) quantiles"
+        ],
+        "diagnostics": {
+          "int_QR_minus_mean": -3.1086244689504383e-15,
+          "int_QS_minus_mean": -4.551914400963142e-15,
+          "int_QR2_minus_second_moment": -2.6290081223123707e-13,
+          "int_QS2_minus_second_moment": -3.907985046680551e-14,
+          "s_grid_16_vs_24_difference": 8.881784197001252e-16
+        }
+      },
+      "a=(1,0.5),b=(1,1)": {
+        "a": [
+          1.0,
+          0.5
+        ],
+        "b": [
+          1.0,
+          1.0
+        ],
+        "M_co_minus_alpha_beta": 3.1591270000310883,
+        "Q_G": 3.0,
+        "upper_gap_comonotone": 0.636508000124353,
+        "upper_gap_dds": 0.6491106406735181,
+        "lower_Q_comonotone": 2.363491999875647,
+        "lower_Q_cauchy_schwarz": 2.350889359326482,
+        "method": [
+          "Gauss-Legendre (256) after z1=sqrt(x/l1) sin t; bisection",
+          "exact scipy chi2(2) quantiles"
+        ],
+        "diagnostics": {
+          "int_QR_minus_mean": -9.992007221626409e-16,
+          "int_QS_minus_mean": -3.3306690738754696e-16,
+          "int_QR2_minus_second_moment": -2.930988785010413e-14,
+          "int_QS2_minus_second_moment": -2.842170943040401e-14,
+          "s_grid_16_vs_24_difference": 0.0
+        }
+      },
+      "a=(1,1,1,1),b=(2,1)": {
+        "a": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "b": [
+          2.0,
+          1.0
+        ],
+        "M_co_minus_alpha_beta": 8.827117946833848,
+        "Q_G": 28.0,
+        "upper_gap_comonotone": 11.308471787335392,
+        "upper_gap_dds": 11.777087639996637,
+        "lower_Q_comonotone": 16.691528212664608,
+        "lower_Q_cauchy_schwarz": 16.222912360003363,
+        "method": [
+          "exact scipy chi2(4) quantiles",
+          "Gauss-Legendre (256) after z1=sqrt(x/l1) sin t; bisection"
+        ],
+        "diagnostics": {
+          "int_QR_minus_mean": -1.1102230246251565e-16,
+          "int_QS_minus_mean": -1.9984014443252818e-15,
+          "int_QR2_minus_second_moment": -3.552713678800501e-14,
+          "int_QS2_minus_second_moment": -1.1723955140041653e-13,
+          "s_grid_16_vs_24_difference": 8.881784197001252e-15
+        }
+      }
+    },
+    "general_label": "numerical evaluation (quantile bisection + Gauss-Legendre in s), not interval-certified",
+    "M_co_plane_to_line": 4.795280984958839,
+    "status": "passed"
+  },
+  "c_plane_to_line": {
+    "Q_G": 12.0,
+    "table": [
+      {
+        "bound": "lower",
+        "value": 8.686291501015239,
+        "label": "certified (DDS / Cauchy-Schwarz): 12-8(sqrt2-1)"
+      },
+      {
+        "bound": "lower",
+        "value": 8.818876060164644,
+        "label": "certified inequality, mpmath-evaluated: comonotone"
+      },
+      {
+        "bound": "upper",
+        "value": 10.857142857142858,
+        "label": "certified: flow at t=1/7, K<28"
+      },
+      {
+        "bound": "upper",
+        "value": 10.840408205773457,
+        "label": "certified: 12-4/(1+sqrt6)"
+      },
+      {
+        "bound": "upper",
+        "value": 10.469655743838779,
+        "label": "numerical: W flow at t=1/7"
+      },
+      {
+        "bound": "upper",
+        "value": 10.299497655462936,
+        "label": "numerical: W/pair flow minimum at t=0.211037"
+      },
+      {
+        "bound": "upper",
+        "value": 10.032058401281795,
+        "label": "numerical: monotone rearrangement h=x1+sgn(x1)(lam x2^2+kap x1^2)"
+      },
+      {
+        "bound": "upper",
+        "value": 10.02442015981709,
+        "label": "numerical: monotone rearrangement h=x1+sgn(x1)(lam x2^2+mu x2^4+kap x1^2)"
+      }
+    ],
+    "flow": {
+      "GL_fine": {
+        "rule": "orthant composite Gauss-Legendre [0,8.0]^2, panel 0.125, 12 nodes/panel",
+        "nodes": 589824,
+        "Q_grid": [
+          12.000000000023999,
+          11.843252284968944,
+          11.693209366605043,
+          11.550149953270843,
+          11.414321618189948,
+          11.28593877763764,
+          11.165181674923804,
+          11.052196285756015,
+          10.94709500371654,
+          10.849957940387444,
+          10.76083467526659,
+          10.67974630660337,
+          10.606687677671161,
+          10.541629678242327,
+          10.484521544843226,
+          10.435293104118156,
+          10.393856920772585,
+          10.360110325176336,
+          10.333937306162586,
+          10.315210262349115,
+          10.303791610935455,
+          10.299535256851541,
+          10.302287927748477,
+          10.311890381971747,
+          10.328178497603819,
+          10.350984251119616,
+          10.380136594310365,
+          10.415462238009262,
+          10.45678635086615,
+          10.503933181018478,
+          10.556726608031756,
+          10.61499063195847,
+          10.678549805816267,
+          10.747229617232797,
+          10.820856824462261,
+          10.899259751458239,
+          10.982268546202299,
+          11.06971540603984,
+          11.161434773370196,
+          11.257263504675088,
+          11.357041015549427,
+          11.460609404116056,
+          11.56781355496009,
+          11.6785012255012,
+          11.792523116536842,
+          11.909732928521002,
+          12.029987405000643,
+          12.153146364501271,
+          12.279072722040048,
+          12.407632501339528,
+          12.538694838724311,
+          12.672131979595967,
+          12.807819268304598,
+          12.945635132164732,
+          13.085461060294875,
+          13.22718157790294,
+          13.37068421657937,
+          13.515859481110905,
+          13.662600813277994,
+          13.810804553055071,
+          13.960369897591882
+        ],
+        "t_grid_min": 0.21,
+        "Q_grid_min": 10.299535256851541,
+        "Q_at_1_over_7": 10.469655743838779,
+        "marginal_Y2_error_at_1_over_7": -1.4144241333724494e-13,
+        "marginal_Y4_error_at_1_over_7": -7.567724225054917e-12,
+        "t_min": 0.21103659065510058,
+        "Q_min": 10.299497655462936,
+        "marginal_Y2_error_at_t_min": -5.796341184804987e-11,
+        "marginal_Y4_error_at_t_min": -2.229900708528021e-10
+      },
+      "GL_coarse": {
+        "rule": "orthant composite Gauss-Legendre [0,8.0]^2, panel 0.125, 8 nodes/panel",
+        "nodes": 262144,
+        "Q_grid": [
+          12.000000000023814,
+          11.843252284968745,
+          11.693209366604847,
+          11.550149953270648,
+          11.414321618189767,
+          11.285938777637426,
+          11.165181674923605,
+          11.052196285755812,
+          10.947095003716363,
+          10.849957940387242,
+          10.760834675266388,
+          10.679746306603093,
+          10.606687677670564,
+          10.54162967823994,
+          10.484521544838906,
+          10.435293104139845,
+          10.393856920992949,
+          10.360110326248115,
+          10.333937309945568,
+          10.315210273166215,
+          10.303791637335664,
+          10.299535313582975,
+          10.302288037325713,
+          10.31189057495526,
+          10.328178810594203,
+          10.350984721552098,
+          10.380137251416215,
+          10.415463089736093,
+          10.456787367040384,
+          10.503934273509337,
+          10.55672760906105,
+          10.614991271954295,
+          10.678549692309176,
+          10.747228216246107,
+          10.820853445675858,
+          10.899253538163642,
+          10.982258470748889,
+          11.069700271135176,
+          11.16141321927055,
+          11.257234022008038,
+          11.357001963264246,
+          11.46055903186727,
+          11.567750029096967,
+          11.678422657761857,
+          11.792427594518411,
+          11.909618547016407,
+          12.029852297344917,
+          12.15298873314828,
+          12.278890867687217,
+          12.40742485002567,
+          12.538459966436434,
+          12.671868634031856,
+          12.807526387544343,
+          12.945311860101476,
+          13.085106758765473,
+          13.226795835534915,
+          13.370266854438341,
+          13.515410555286866,
+          13.662120614592556,
+          13.810293604105993,
+          13.95982894737432
+        ],
+        "t_grid_min": 0.21,
+        "Q_grid_min": 10.299535313582975,
+        "Q_at_1_over_7": 10.469655743836157,
+        "marginal_Y2_error_at_1_over_7": -7.549516567451064e-14,
+        "marginal_Y4_error_at_1_over_7": -7.87014897696281e-12,
+        "t_min": 0.21103652975539894,
+        "Q_min": 10.299497716484872,
+        "marginal_Y2_error_at_t_min": -5.865368191138032e-10,
+        "marginal_Y4_error_at_t_min": -2.075154270642088e-09
+      },
+      "GH_256": {
+        "rule": "tensor Gauss-Hermite order 256, full space",
+        "nodes": 65536,
+        "Q_grid": [
+          12.000000000000352,
+          11.843252284944583,
+          11.693209366578795,
+          11.550149953240883,
+          11.41432161815554,
+          11.285938777599473,
+          11.165181674879548,
+          11.052196285479127,
+          10.947094998318889,
+          10.849957878676776,
+          10.760834237590302,
+          10.679744131841087,
+          10.60667942771553,
+          10.541604294817372,
+          10.484455369222971,
+          10.435142111231364,
+          10.393547920421561,
+          10.359532369704887,
+          10.332934607922937,
+          10.313577695434194,
+          10.301273461450588,
+          10.295827422563452,
+          10.29704335252854,
+          10.304727201465695,
+          10.318690188863751,
+          10.338751011179625,
+          10.364737196985597,
+          10.396485704599588,
+          10.433842894106089,
+          10.476664013783768,
+          10.524812347495757,
+          10.578158141536449,
+          10.63657741929024,
+          10.699950788398311,
+          10.768162268568972,
+          10.841098203116005,
+          10.918646337689928,
+          11.00069499876749,
+          11.087132350957035,
+          11.177845887289724,
+          11.272722128647324,
+          11.371646290539104,
+          11.474501945206505,
+          11.58117099307034,
+          11.69153393721595,
+          11.805470014305993,
+          11.92285698007867,
+          12.043570989567591,
+          12.167487065487727,
+          12.294479936090159,
+          12.424424472645061,
+          12.557195341306603,
+          12.69266641571096,
+          12.830710901214502,
+          12.971202492973148,
+          13.114016832161507,
+          13.259032092353781,
+          13.406128174580374,
+          13.555185171643295,
+          13.706082471115145,
+          13.858699501042288
+        ],
+        "t_grid_min": 0.21,
+        "Q_grid_min": 10.295827422563452,
+        "Q_at_1_over_7": 10.4695709341681,
+        "marginal_Y2_error_at_1_over_7": 9.053545080295322e-07,
+        "marginal_Y4_error_at_1_over_7": -1.2928770773967813e-05
+      },
+      "GH_384": {
+        "rule": "tensor Gauss-Hermite order 384, full space",
+        "nodes": 147456,
+        "Q_grid": [
+          12.000000000000515,
+          11.843252284944754,
+          11.693209366578966,
+          11.550149953241053,
+          11.414321618155714,
+          11.285938777599664,
+          11.165181674883009,
+          11.052196285671606,
+          10.947095002459307,
+          10.84995792381767,
+          10.760834541352114,
+          10.679745565693594,
+          10.606684604460032,
+          10.541619483041906,
+          10.4844931993869,
+          10.435224731315294,
+          10.393710044448643,
+          10.359823624510039,
+          10.333420712526692,
+          10.31434023326447,
+          10.30240824729367,
+          10.297441663698727,
+          10.299251928525216,
+          10.307648437554612,
+          10.32244148745939,
+          10.343444655238677,
+          10.370476566627499,
+          10.40336207125539,
+          10.441932882548379,
+          10.486027764394816,
+          10.535492356834656,
+          10.590178733309152,
+          10.649944774675735,
+          10.714653435082077,
+          10.784171960585802,
+          10.858371109840089,
+          10.937124413701916,
+          11.020307495914352,
+          11.107797476741467,
+          11.199472464894079,
+          11.295211133757846,
+          11.394892396134523,
+          11.498395167136689,
+          11.605598185345244,
+          11.716379911108245,
+          11.830618514958005,
+          11.948191895160786,
+          12.068977697352413,
+          12.192853408145538,
+          12.319696539707685,
+          12.44938478799267,
+          12.581796103081398,
+          12.716808798867085,
+          12.854301822232241,
+          12.994155064752427,
+          13.13624949215717,
+          13.28046709281157,
+          13.426690920639743,
+          13.574805436248454,
+          13.724696977169884,
+          13.876253964332896
+        ],
+        "t_grid_min": 0.21,
+        "Q_grid_min": 10.297441663698727,
+        "Q_at_1_over_7": 10.469618805231612,
+        "marginal_Y2_error_at_1_over_7": 3.7097097793648004e-07,
+        "marginal_Y4_error_at_1_over_7": -5.6510967514356025e-06
+      }
+    },
+    "rearrangement": {
+      "h=x1+sgn(x1)(lam x2^2+kap x1^2)": {
+        "lam": 0.3668168270372375,
+        "mu": 0.0,
+        "kap": 0.17220773308156712,
+        "Q": 10.032058401281795,
+        "Q_coarse_grid": 10.032058401281553,
+        "E_Y2_minus_1": -5.329070518200751e-15,
+        "E_Y4_minus_3": -1.5987211554602254e-14,
+        "E_X1Y": 0.9456101148466804,
+        "E_X2Y": 1.1519648082658485e-19,
+        "quadrature": [
+          "polar GL r:360 x theta:96, F_h GL 64",
+          "polar GL r:720 x theta:192, F_h GL 128"
+        ]
+      },
+      "h=x1+sgn(x1)(lam x2^2+mu x2^4+kap x1^2)": {
+        "lam": 0.34896245562369776,
+        "mu": 0.008208414685194678,
+        "kap": 0.22438287992437922,
+        "Q": 10.02442015981709,
+        "Q_coarse_grid": 10.024420159816835,
+        "E_Y2_minus_1": -5.551115123125783e-15,
+        "E_Y4_minus_3": -1.7319479184152442e-14,
+        "E_X1Y": 0.9464597716970587,
+        "E_X2Y": -2.236166980751353e-19,
+        "quadrature": [
+          "polar GL r:360 x theta:96, F_h GL 64",
+          "polar GL r:720 x theta:192, F_h GL 128"
+        ]
+      }
+    },
+    "linear_control": {
+      "Q": 11.999999999999979,
+      "E_Y2_minus_1": 4.440892098500626e-16,
+      "E_Y4_minus_3": 1.7763568394002505e-15,
+      "E_X1Y": 1.0000000000000007,
+      "E_X2Y": 4.336808689942018e-19
+    },
+    "enclosure_numerical": [
+      8.818876060164644,
+      10.02442015981709
+    ],
+    "label": "Upper values marked numerical are deterministic quadrature of feasible couplings, not interval-certified.",
+    "status": "passed"
+  },
+  "d_equal_dim": {
+    "d": 2,
+    "cos_theta": 0.9486832980505138,
+    "Q_G": 12.0,
+    "S": 1.0,
+    "K_C": 53.93325909419153,
+    "lower_S_over_A2B2": 0.31622776601683794,
+    "lower_32S2_over_KC": 0.5933259094191532,
+    "lower_best_pair": 0.5933259094191532,
+    "upper_dds_8(A2B2-ab)": 1.2982212813470362,
+    "upper_half_QG": 6.0,
+    "rel_lower_S_over_A2B2": 0.026352313834736494,
+    "rel_lower_32S2_over_KC": 0.04944382578492943,
+    "rel_lower_best_pair": 0.04944382578492943,
+    "rel_upper_dds": 0.10818510677891968,
+    "bracket_interval": [
+      10.701778718652964,
+      11.406674090580847
+    ],
+    "upper_comonotone": 1.273016000248706,
+    "rel_upper_comonotone": 0.10608466668739218,
+    "comonotone_method": [
+      "Gauss-Legendre (256) after z1=sqrt(x/l1) sin t; bisection",
+      "exact scipy chi2(2) quantiles"
+    ],
+    "comonotone_diagnostics": {
+      "int_QR_minus_mean": -1.9984014443252818e-15,
+      "int_QS_minus_mean": -3.3306690738754696e-16,
+      "int_QR2_minus_second_moment": -1.1723955140041653e-13,
+      "int_QS2_minus_second_moment": -2.842170943040401e-14,
+      "s_grid_16_vs_24_difference": 0.0
+    },
+    "comonotone_tail_estimate": 5.1965743277832653e-14,
+    "best_lower_gap": 0.5933259094191532,
+    "best_upper_gap": 1.273016000248706,
+    "rel_best_lower": 0.04944382578492943,
+    "rel_best_upper": 0.10608466668739218,
+    "Q_star_interval": [
+      10.726983999751294,
+      11.406674090580847
+    ],
+    "exact_forms": {
+      "Q_G": "12",
+      "S": "1",
+      "A2B2": "sqrt(10)",
+      "a.b": "3",
+      "S_over_A2B2": "1/sqrt(10)",
+      "K_C": "sqrt(896)+24 = 8 sqrt(14)+24",
+      "32S2_over_KC": "32/(24+8 sqrt(14)) = 4/(3+sqrt(14))",
+      "upper_dds": "8(sqrt(10)-3)"
+    },
+    "label": "lower gaps certified; comonotone upper gap is a certified inequality evaluated numerically",
+    "status": "passed"
+  },
+  "e_realistic": {
+    "rows": {
+      "plane->line a=(1,1), b=(1)": {
+        "d": 2,
+        "cos_theta": 0.7071067811865475,
+        "Q_G": 12.0,
+        "S": 1.0,
+        "K_C": 27.595917942265423,
+        "lower_S_over_A2B2": 0.7071067811865475,
+        "lower_32S2_over_KC": 1.1595917942265426,
+        "lower_best_pair": 1.1595917942265426,
+        "upper_dds_8(A2B2-ab)": 3.313708498984761,
+        "upper_half_QG": 6.0,
+        "rel_lower_S_over_A2B2": 0.05892556509887895,
+        "rel_lower_32S2_over_KC": 0.09663264951887855,
+        "rel_lower_best_pair": 0.09663264951887855,
+        "rel_upper_dds": 0.2761423749153968,
+        "bracket_interval": [
+          8.686291501015239,
+          10.840408205773457
+        ],
+        "upper_comonotone": 3.1811239398353344,
+        "rel_upper_comonotone": 0.2650936616529445,
+        "comonotone_method": [
+          "exact scipy chi2(2) quantiles",
+          "exact scipy chi2(1) quantiles"
+        ],
+        "comonotone_diagnostics": {
+          "int_QR_minus_mean": -3.3306690738754696e-16,
+          "int_QS_minus_mean": -4.551914400963142e-15,
+          "int_QR2_minus_second_moment": -2.842170943040401e-14,
+          "int_QS2_minus_second_moment": -3.907985046680551e-14,
+          "s_grid_16_vs_24_difference": 0.0
+        },
+        "comonotone_tail_estimate": 2.5915800225645234e-14
+      },
+      "power law d=50: i^-1 vs i^-1.5 (trace 1)": {
+        "d": 50,
+        "cos_theta": 0.9585466369765874,
+        "Q_G": 0.36808536528772917,
+        "S": 0.0014417932330443065,
+        "K_C": 0.004132713255523045,
+        "lower_S_over_A2B2": 0.010819279368306413,
+        "lower_32S2_over_KC": 0.01609610034530604,
+        "lower_best_pair": 0.0027003964373126734,
+        "upper_dds_8(A2B2-ab)": 0.04419309365033319,
+        "upper_half_QG": 0.18404268264386459,
+        "rel_lower_S_over_A2B2": 0.029393397262205943,
+        "rel_lower_32S2_over_KC": 0.04372925919704484,
+        "rel_lower_best_pair": 0.007336331981582035,
+        "rel_upper_dds": 0.12006207749060556,
+        "bracket_interval": [
+          0.323892271637396,
+          0.35198926494242316
+        ],
+        "upper_comonotone": 0.03701337964954887,
+        "rel_upper_comonotone": 0.10055650982107325,
+        "comonotone_method": [
+          "Imhof inversion, 13696 Gauss-Legendre nodes on [0,227.8], envelope tail bound 7.8e-14; bisection",
+          "Imhof inversion, 65888 Gauss-Legendre nodes on [0,597.4], envelope tail bound 1.0e-15; bisection"
+        ],
+        "comonotone_diagnostics": {
+          "int_QR_minus_mean": -1.7085046183362707e-08,
+          "int_QS_minus_mean": -3.271332066345778e-08,
+          "int_QR2_minus_second_moment": -1.7823947562334297e-07,
+          "int_QS2_minus_second_moment": -5.881403788432493e-07,
+          "s_grid_16_vs_24_difference": 3.804179193878099e-13
+        },
+        "comonotone_tail_estimate": 2.726771340655796e-07
+      },
+      "exp decay d=50: e^-0.1i vs e^-0.2i (trace 1)": {
+        "d": 50,
+        "cos_theta": 0.9432212900587092,
+        "Q_G": 0.1303408195352221,
+        "S": 0.00055688283662383,
+        "K_C": 0.0004495935678707578,
+        "lower_S_over_A2B2": 0.00783855133414375,
+        "lower_32S2_over_KC": 0.02207280643768294,
+        "lower_best_pair": 0.0014074203280099885,
+        "upper_dds_8(A2B2-ab)": 0.03227033945848523,
+        "upper_half_QG": 0.06517040976761106,
+        "rel_lower_S_over_A2B2": 0.06013888329147364,
+        "rel_lower_32S2_over_KC": 0.16934684403851077,
+        "rel_lower_best_pair": 0.010798001217336676,
+        "rel_upper_dds": 0.24758429150251574,
+        "bracket_interval": [
+          0.09807048007673691,
+          0.10826801309753935
+        ],
+        "upper_comonotone": 0.030779430470252223,
+        "rel_upper_comonotone": 0.23614574912147665,
+        "comonotone_method": [
+          "Imhof inversion, 7472 Gauss-Legendre nodes on [0,234.8], envelope tail bound 1.1e-13; bisection",
+          "Imhof inversion, 22256 Gauss-Legendre nodes on [0,418.9], envelope tail bound 7.1e-13; bisection"
+        ],
+        "comonotone_diagnostics": {
+          "int_QR_minus_mean": -8.33270948075171e-09,
+          "int_QS_minus_mean": -1.4576840179358896e-08,
+          "int_QR2_minus_second_moment": -5.2485659152168296e-08,
+          "int_QS2_minus_second_moment": -1.3456101433106937e-07,
+          "s_grid_16_vs_24_difference": 3.98209243357428e-13
+        },
+        "comonotone_tail_estimate": 5.924250391061354e-08
+      },
+      "PCA truncation: a=i^-1 (d=200), b=a[:10] (raw)": {
+        "d": 200,
+        "cos_theta": 0.9721168270706061,
+        "Q_G": 35.50931361497196,
+        "S": 0.1397562172869801,
+        "K_C": 4.041902350468367,
+        "lower_S_over_A2B2": 0.08766434335946927,
+        "lower_32S2_over_KC": 0.15463451475498247,
+        "lower_best_pair": 0.010209609934532213,
+        "upper_dds_8(A2B2-ab)": 0.35561521368766513,
+        "upper_half_QG": 17.75465680748598,
+        "rel_lower_S_over_A2B2": 0.0024687704276690646,
+        "rel_lower_32S2_over_KC": 0.004354759329670151,
+        "rel_lower_best_pair": 0.0002875192138388022,
+        "rel_upper_dds": 0.010014702552226338,
+        "bracket_interval": [
+          35.153698401284295,
+          35.35467910021698
+        ],
+        "upper_comonotone": 0.34907872618410885,
+        "rel_upper_comonotone": 0.009830624437553902,
+        "comonotone_method": [
+          "Imhof inversion, 13888 Gauss-Legendre nodes on [0,50.62], envelope tail bound 1.6e-17; bisection",
+          "Imhof inversion, 229200 Gauss-Legendre nodes on [0,865], envelope tail bound 8.6e-13; bisection"
+        ],
+        "comonotone_diagnostics": {
+          "int_QR_minus_mean": -7.68848115173526e-08,
+          "int_QS_minus_mean": -7.678629920793156e-08,
+          "int_QR2_minus_second_moment": -3.850910061942159e-06,
+          "int_QS2_minus_second_moment": -3.335948166593994e-06,
+          "s_grid_16_vs_24_difference": 5.6417093219351955e-12
+        },
+        "comonotone_tail_estimate": 2.8802245258273317e-06
+      },
+      "near-isotropic d=50: a=1, b=1+U(0,0.2), seed 1 (trace 1)": {
+        "d": 50,
+        "cos_theta": 0.9987410555904532,
+        "Q_G": 0.00040362426178585726,
+        "S": 1.0090606544646429e-06,
+        "K_C": 1.6814916952473642e-07,
+        "lower_S_over_A2B2": 5.038951515974055e-05,
+        "lower_32S2_over_KC": 0.00019377145324314205,
+        "lower_best_pair": 1.1851883437034455e-05,
+        "upper_dds_8(A2B2-ab)": 0.00020168501575054676,
+        "upper_half_QG": 0.00020181213089292863,
+        "rel_lower_S_over_A2B2": 0.12484263194880663,
+        "rel_lower_32S2_over_KC": 0.4800788049404905,
+        "rel_lower_best_pair": 0.029363654663857815,
+        "rel_upper_dds": 0.4996850656553215,
+        "bracket_interval": [
+          0.00020193924603533815,
+          0.00020985280854271524
+        ],
+        "upper_comonotone": 0.00020167473942883651,
+        "rel_upper_comonotone": 0.4996596055363862,
+        "comonotone_method": [
+          "exact scipy chi2(50) quantiles",
+          "Imhof inversion, 6048 Gauss-Legendre nodes on [0,461.5], envelope tail bound 2.7e-26; bisection"
+        ],
+        "comonotone_diagnostics": {
+          "int_QR_minus_mean": -3.5327068353963043e-09,
+          "int_QS_minus_mean": -3.5440124168673037e-09,
+          "int_QR2_minus_second_moment": -1.5189448365759972e-08,
+          "int_QS2_minus_second_moment": -1.5250958274037885e-08,
+          "s_grid_16_vs_24_difference": 6.601247326543103e-13
+        },
+        "comonotone_tail_estimate": 5.939562126256809e-09
+      },
+      "embeddings 768 vs 512, both i^-1 (trace 1)": {
+        "d": 768,
+        "cos_theta": 0.9998022529233326,
+        "Q_G": 0.0009900007373555176,
+        "S": 4.406931978175025e-07,
+        "K_C": 2.5905918125393893e-07,
+        "lower_S_over_A2B2": 1.3201301084589675e-05,
+        "lower_32S2_over_KC": 2.398963741490336e-05,
+        "lower_best_pair": 9.541316835387869e-08,
+        "upper_dds_8(A2B2-ab)": 5.2810425891947066e-05,
+        "upper_half_QG": 0.0004950003686777588,
+        "rel_lower_S_over_A2B2": 0.013334637628506106,
+        "rel_lower_32S2_over_KC": 0.02423193893671665,
+        "rel_lower_best_pair": 9.63768659493584e-05,
+        "rel_upper_dds": 0.053343824806650016,
+        "bracket_interval": [
+          0.0009371903114634593,
+          0.0009660110999406144
+        ],
+        "upper_comonotone": 5.280443721694672e-05,
+        "rel_upper_comonotone": 0.05333777564448844,
+        "comonotone_method": [
+          "Imhof inversion, 9376 Gauss-Legendre nodes on [0,243.7], envelope tail bound 6.4e-13; bisection",
+          "Imhof inversion, 9344 Gauss-Legendre nodes on [0,230.1], envelope tail bound 7.8e-13; bisection"
+        ],
+        "comonotone_diagnostics": {
+          "int_QR_minus_mean": -1.0646962367300006e-08,
+          "int_QS_minus_mean": -1.1279665798613614e-08,
+          "int_QR2_minus_second_moment": -7.850362515604559e-08,
+          "int_QS2_minus_second_moment": -8.651824834338129e-08,
+          "s_grid_16_vs_24_difference": 2.656347364293765e-13
+        },
+        "comonotone_tail_estimate": 5.859013578546022e-08
+      }
+    },
+    "seed_near_isotropic": 1,
+    "label": "certificates are proved inequalities in floating point; comonotone column is a numerical evaluation (Imhof inversion for d>2)",
+    "status": "passed"
+  },
+  "f_path_curvature": {
+    "cases": {
+      "plane->line a=(1,1), b=(1,0)": {
+        "a": [
+          1.0,
+          1.0
+        ],
+        "b": [
+          1.0,
+          0.0
+        ],
+        "S": 1.0,
+        "K_C": 27.595917942265423,
+        "t_star_4S_over_KC": 0.14494897427831782,
+        "t_range": [
+          -0.28989794855663564,
+          0.28989794855663564
+        ],
+        "grid_points": 161,
+        "fd_step": 0.0036237243569579454,
+        "quadrature": "orthant composite Gauss-Legendre [0,8.0]^2, panel 0.125, 12 nodes/panel",
+        "nodes": 589824,
+        "convergence_rule": "orthant composite Gauss-Legendre [0,8.0]^2, panel 0.125, 8 nodes/panel",
+        "max_abs_G2_finite_difference": 20.094011356311583,
+        "max_abs_G2_generator": 20.094720727534963,
+        "ratio_max_G2_over_KC": 0.7281772894663613,
+        "max_fd_minus_generator": 0.0009427798164196588,
+        "G_change_between_rules": 3.5919149077301427e-07,
+        "G2_change_between_rules": 0.0004124760859856025,
+        "G_prime_0_fourth_order_difference": 3.9999999378806597,
+        "four_S": 4.0,
+        "min_taylor_margin_over_t2_excluding_0": 4.384354498723183,
+        "min_taylor_margin": 0.0,
+        "max_target_second_moment_error": 5.0762425374273334e-09,
+        "tolerance_G2": 0.0008525480899134704,
+        "tolerance_taylor": 7.243829815460225e-07
+      },
+      "a=(2,1), b=(1,1)": {
+        "a": [
+          2.0,
+          1.0
+        ],
+        "b": [
+          1.0,
+          1.0
+        ],
+        "S": 1.0,
+        "K_C": 53.93325909419153,
+        "t_star_4S_over_KC": 0.07416573867739415,
+        "t_range": [
+          -0.1483314773547883,
+          0.1483314773547883
+        ],
+        "grid_points": 161,
+        "fd_step": 0.0018541434669348538,
+        "quadrature": "orthant composite Gauss-Legendre [0,8.0]^2, panel 0.125, 12 nodes/panel",
+        "nodes": 589824,
+        "convergence_rule": "orthant composite Gauss-Legendre [0,8.0]^2, panel 0.125, 8 nodes/panel",
+        "max_abs_G2_finite_difference": 49.686140633787964,
+        "max_abs_G2_generator": 49.68665989386301,
+        "ratio_max_G2_over_KC": 0.9212619583602011,
+        "max_fd_minus_generator": 0.0005537928408685389,
+        "G_change_between_rules": 1.7763568394002505e-13,
+        "G2_change_between_rules": 2.357090522764338e-08,
+        "G_prime_0_fourth_order_difference": 3.9999999957279493,
+        "four_S": 4.0,
+        "min_taylor_margin_over_t2_excluding_0": 2.399912400046355,
+        "min_taylor_margin": 0.0,
+        "max_target_second_moment_error": 1.8207657603852567e-13,
+        "tolerance_G2": 5.398040090464681e-05,
+        "tolerance_taylor": 1.800035527134987e-08
+      },
+      "a=(3,1), b=(1,1)": {
+        "a": [
+          3.0,
+          1.0
+        ],
+        "b": [
+          1.0,
+          1.0
+        ],
+        "S": 4.0,
+        "K_C": 320.0,
+        "t_star_4S_over_KC": 0.05,
+        "t_range": [
+          -0.1,
+          0.1
+        ],
+        "grid_points": 161,
+        "fd_step": 0.00125,
+        "quadrature": "orthant composite Gauss-Legendre [0,8.0]^2, panel 0.125, 12 nodes/panel",
+        "nodes": 589824,
+        "convergence_rule": "orthant composite Gauss-Legendre [0,8.0]^2, panel 0.125, 8 nodes/panel",
+        "max_abs_G2_finite_difference": 275.3804716326158,
+        "max_abs_G2_generator": 275.3855579673291,
+        "ratio_max_G2_over_KC": 0.8605798686479034,
+        "max_fd_minus_generator": 0.005712020636963189,
+        "G_change_between_rules": 1.828542650628151e-09,
+        "G2_change_between_rules": 5.631732241795362e-05,
+        "G_prime_0_fourth_order_difference": 15.999999943658832,
+        "four_S": 16.0,
+        "min_taylor_margin_over_t2_excluding_0": 25.439458921895664,
+        "min_taylor_margin": 0.0,
+        "max_target_second_moment_error": 5.59996493620929e-13,
+        "tolerance_G2": 0.0004326346448359072,
+        "tolerance_taylor": 2.7657085301232294e-08
+      },
+      "a=(3,2,1), b=(1,1,1)": {
+        "a": [
+          3.0,
+          2.0,
+          1.0
+        ],
+        "b": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "S": 6.0,
+        "K_C": 563.8064012359121,
+        "t_star_4S_over_KC": 0.042567803322895836,
+        "t_range": [
+          -0.08513560664579167,
+          0.08513560664579167
+        ],
+        "grid_points": 81,
+        "fd_step": 0.002128390166144792,
+        "quadrature": "orthant composite Gauss-Legendre [0,6.5]^3, panel 0.5, 6 nodes/panel",
+        "nodes": 474552,
+        "convergence_rule": "orthant composite Gauss-Legendre [0,6.5]^3, panel 0.65, 6 nodes/panel",
+        "max_abs_G2_finite_difference": 514.4541614822684,
+        "max_abs_G2_generator": 514.4822160202916,
+        "ratio_max_G2_over_KC": 0.9125157410283076,
+        "max_fd_minus_generator": 0.030306137707157177,
+        "G_change_between_rules": 2.241232266442239e-08,
+        "G2_change_between_rules": 0.002428530405722995,
+        "G_prime_0_fourth_order_difference": 23.999997435838416,
+        "four_S": 24.0,
+        "min_taylor_margin_over_t2_excluding_0": 30.301986834484747,
+        "min_taylor_margin": 0.0,
+        "max_target_second_moment_error": 1.1134158484082946e-08,
+        "tolerance_G2": 0.005420867212681902,
+        "tolerance_taylor": 8.682464420703231e-08
+      },
+      "zero eigenvalue a=(2,1,0), b=(1,1,1)": {
+        "a": [
+          2.0,
+          1.0,
+          0.0
+        ],
+        "b": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "S": 6.0,
+        "K_C": 371.7390070338254,
+        "t_star_4S_over_KC": 0.06456142494031084,
+        "t_range": [
+          -0.12912284988062167,
+          0.12912284988062167
+        ],
+        "grid_points": 81,
+        "fd_step": 0.0032280712470155416,
+        "quadrature": "orthant composite Gauss-Legendre [0,6.5]^3, panel 0.5, 6 nodes/panel",
+        "nodes": 474552,
+        "convergence_rule": "orthant composite Gauss-Legendre [0,6.5]^3, panel 0.65, 6 nodes/panel",
+        "max_abs_G2_finite_difference": 297.7427093786253,
+        "max_abs_G2_generator": 297.7792842327228,
+        "ratio_max_G2_over_KC": 0.8010439544904341,
+        "max_fd_minus_generator": 0.04427689025112613,
+        "G_change_between_rules": 7.998929380192976e-06,
+        "G2_change_between_rules": 0.018477697163973517,
+        "G_prime_0_fourth_order_difference": 23.99999383652698,
+        "four_S": 24.0,
+        "min_taylor_margin_over_t2_excluding_0": 46.13583912403586,
+        "min_taylor_margin": 0.0,
+        "max_target_second_moment_error": 1.3063190751338993e-07,
+        "tolerance_G2": 0.03732713333498086,
+        "tolerance_taylor": 1.6018858759825046e-05
+      },
+      "a=(5,1,0.5), b=(1,0.8,0.1)": {
+        "a": [
+          5.0,
+          1.0,
+          0.5
+        ],
+        "b": [
+          1.0,
+          0.8,
+          0.1
+        ],
+        "S": 9.09,
+        "K_C": 1148.1311015009815,
+        "t_star_4S_over_KC": 0.0316688572868252,
+        "t_range": [
+          -0.0633377145736504,
+          0.0633377145736504
+        ],
+        "grid_points": 81,
+        "fd_step": 0.0015834428643412598,
+        "quadrature": "orthant composite Gauss-Legendre [0,6.5]^3, panel 0.5, 6 nodes/panel",
+        "nodes": 474552,
+        "convergence_rule": "orthant composite Gauss-Legendre [0,6.5]^3, panel 0.65, 6 nodes/panel",
+        "max_abs_G2_finite_difference": 1005.4352464355209,
+        "max_abs_G2_generator": 1005.5210263028266,
+        "ratio_max_G2_over_KC": 0.8757893806624374,
+        "max_fd_minus_generator": 0.09909578585052259,
+        "G_change_between_rules": 2.426885295392367e-06,
+        "G2_change_between_rules": 0.07269997291803065,
+        "G_prime_0_fourth_order_difference": 36.35999583737245,
+        "four_S": 36.36,
+        "min_taylor_margin_over_t2_excluding_0": 78.73189881547479,
+        "min_taylor_margin": 0.0,
+        "max_target_second_moment_error": 1.3452922331680384e-08,
+        "tolerance_G2": 0.14654807693756228,
+        "tolerance_taylor": 4.889520589728312e-06
+      },
+      "line vs R^3 a=(1,1,1), b=(1,0,0)": {
+        "a": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "b": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "S": 2.0,
+        "K_C": 64.0,
+        "t_star_4S_over_KC": 0.125,
+        "t_range": [
+          -0.25,
+          0.25
+        ],
+        "grid_points": 81,
+        "fd_step": 0.00625,
+        "quadrature": "orthant composite Gauss-Legendre [0,6.5]^3, panel 0.5, 6 nodes/panel",
+        "nodes": 474552,
+        "convergence_rule": "orthant composite Gauss-Legendre [0,6.5]^3, panel 0.65, 6 nodes/panel",
+        "max_abs_G2_finite_difference": 44.78512970363226,
+        "max_abs_G2_generator": 44.79217976430098,
+        "ratio_max_G2_over_KC": 0.6998778088172029,
+        "max_fd_minus_generator": 0.009494347516373125,
+        "G_change_between_rules": 3.711698849340195e-05,
+        "G2_change_between_rules": 0.03138862263625697,
+        "G_prime_0_fourth_order_difference": 7.999996987338324,
+        "four_S": 8.0,
+        "min_taylor_margin_over_t2_excluding_0": 11.589744206983763,
+        "min_taylor_margin": 0.0,
+        "max_target_second_moment_error": 3.330258447564738e-06,
+        "tolerance_G2": 0.06284124527251393,
+        "tolerance_taylor": 7.424097698661693e-05
+      }
+    },
+    "max_ratio_G2_over_KC": 0.9212619583602011,
+    "tolerance": "max|G''| <= K_C + 1e-6 K_C + 2 x (fine-coarse change in G''); Taylor margin >= -(1e-9 max(1,|G(0)|) + 2 x (fine-coarse change in G))",
+    "ode": "DOP853 rtol 1e-11 atol 1e-12, integrated outward from t=0 on each branch",
+    "symmetry": "orthant quadrature uses exact sign-flip symmetry; off-diagonal E[Z_i T_j] = 0",
+    "label": "numerical (deterministic quadrature + ODE), not interval-certified",
+    "status": "passed"
+  },
+  "g_near_isotropic": {
+    "rows": [
+      {
+        "d": 2,
+        "eps": 0.01,
+        "ratio_32S2_over_KC_over_QG": 0.24999917649429654,
+        "d_over_2(d+2)": 0.25,
+        "deviation": -8.235057034622351e-07,
+        "deviation_over_eps": -8.23505703462235e-05,
+        "upper_ratio_8(A2B2-ab)_over_QG": 0.49999959869781113,
+        "Q_G": 2.8377617037996482e-05,
+        "cos_theta": 0.9999991132012841
+      },
+      {
+        "d": 2,
+        "eps": 0.001,
+        "ratio_32S2_over_KC_over_QG": 0.24999998071116508,
+        "d_over_2(d+2)": 0.25,
+        "deviation": -1.928883491819633e-08,
+        "deviation_over_eps": -1.928883491819633e-05,
+        "upper_ratio_8(A2B2-ab)_over_QG": 0.4999999933349059,
+        "Q_G": 7.364465118201891e-07,
+        "cos_theta": 0.9999999769860475
+      },
+      {
+        "d": 5,
+        "eps": 0.01,
+        "ratio_32S2_over_KC_over_QG": 0.3567150174421717,
+        "d_over_2(d+2)": 0.35714285714285715,
+        "deviation": -0.00042783970068543953,
+        "deviation_over_eps": -0.04278397006854395,
+        "upper_ratio_8(A2B2-ab)_over_QG": 0.4999777257977914,
+        "Q_G": 0.000838014860943103,
+        "cos_theta": 0.9999895258773476
+      },
+      {
+        "d": 5,
+        "eps": 0.001,
+        "ratio_32S2_over_KC_over_QG": 0.357101017959629,
+        "d_over_2(d+2)": 0.35714285714285715,
+        "deviation": -4.183918322814284e-05,
+        "deviation_over_eps": -0.04183918322814284,
+        "upper_ratio_8(A2B2-ab)_over_QG": 0.4999999990856171,
+        "Q_G": 4.146453996634117e-06,
+        "cos_theta": 0.9999999481693697
+      },
+      {
+        "d": 50,
+        "eps": 0.01,
+        "ratio_32S2_over_KC_over_QG": 0.4809356743760527,
+        "d_over_2(d+2)": 0.4807692307692308,
+        "deviation": 0.00016644360682194215,
+        "deviation_over_eps": 0.016644360682194215,
+        "upper_ratio_8(A2B2-ab)_over_QG": 0.49998957691401513,
+        "Q_G": 0.0031577109203050737,
+        "cos_theta": 0.9999960533496047
+      },
+      {
+        "d": 50,
+        "eps": 0.001,
+        "ratio_32S2_over_KC_over_QG": 0.4807910109124822,
+        "d_over_2(d+2)": 0.4807692307692308,
+        "deviation": 2.178014325143751e-05,
+        "deviation_over_eps": 0.02178014325143751,
+        "upper_ratio_8(A2B2-ab)_over_QG": 0.4999999614763651,
+        "Q_G": 3.560193842167405e-05,
+        "cos_theta": 0.9999999554976273
+      },
+      {
+        "d": 500,
+        "eps": 0.01,
+        "ratio_32S2_over_KC_over_QG": 0.49799939183519154,
+        "d_over_2(d+2)": 0.49800796812749004,
+        "deviation": -8.576292298501098e-06,
+        "deviation_over_eps": -0.0008576292298501098,
+        "upper_ratio_8(A2B2-ab)_over_QG": 0.4999995271717398,
+        "Q_G": 0.0035337735937697595,
+        "cos_theta": 0.9999995583230911
+      },
+      {
+        "d": 500,
+        "eps": 0.001,
+        "ratio_32S2_over_KC_over_QG": 0.49800813505804176,
+        "d_over_2(d+2)": 0.49800796812749004,
+        "deviation": 1.6693055171490556e-07,
+        "deviation_over_eps": 0.00016693055171490556,
+        "upper_ratio_8(A2B2-ab)_over_QG": 0.49999979036110165,
+        "Q_G": 3.34605123728792e-05,
+        "cos_theta": 0.9999999958174419
+      }
+    ],
+    "seed": 20261101,
+    "constant_c": 0.1,
+    "check": "r >= d/(2(d+2)) - c*eps and 8(A2B2-a.b)/Q_G <= 1/2",
+    "max_abs_deviation_over_eps": 0.04278397006854395,
+    "label": "certified inequalities evaluated in floating point; random near-isotropic draws",
+    "status": "passed"
+  },
+  "timings_seconds": {
+    "a_factor_two": 1.0704804580891505,
+    "b_comonotone": 2.949667999986559,
+    "c_plane_to_line": 72.1070433750283,
+    "d_equal_dim": 0.363293084083125,
+    "e_realistic": 128.29174570797477,
+    "f_path_curvature": 161.59841162501834,
+    "g_near_isotropic": 0.004781958064995706
+  },
+  "elapsed_seconds": 366.3859561670106,
+  "explicit_checks_passed": 65675,
+  "optimisation_flag": "none",
+  "skipped_parts": [],
+  "status": "PASS"
+}
